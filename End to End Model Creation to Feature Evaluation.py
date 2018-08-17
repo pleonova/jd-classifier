@@ -384,13 +384,13 @@ def create_token_df(description_vector, classifier_vector, primary_title, second
     # Calculate the difference between the two frequencies
     # to identify the tokens with the greatest divergence between the two roles
     tokens['wf_divergence'] = tokens['primary_wf'] - tokens['secondary_wf']
-    
+    tokens['wf_average'] = (tokens['primary_wf'] + tokens['secondary_wf'])/2
+
     return tokens
 
 
 # Use entire dataset to create the token dataframe from
 token_df = create_token_df(X, y, titleA, titleB)
-
 
 
 
@@ -433,18 +433,19 @@ def extract_surrounding_text(word, context_length, df):
 
 
 # Find all the job postings that have the following word & surrounding characters
-con_df = extract_surrounding_text('self', 20, jds)
+con_df = extract_surrounding_text('experience', 20, jds)
 # Examine the output
 con_df.head(10)
 
 
 
 
-# Which terms appear frequently in both job postings?
 
-# Token appears in at least 50% of documents in the class corpus 
-common_token_df = token_df[(token_df['primary_wf'] >= 0.5) & (token_df['secondary_wf'] >= 0.5) ]
-common_token_df = common_token_df.copy()
-common_token_df['average_of_ps'] = (common_token_df['primary_wf'] + common_token_df['secondary_wf'])/2
+
+# Venn Diagram of terms that appear in more than 30% of documents
+freq = 0.3
+len(token_df[(token_df['primary_wf'] >= freq) & (token_df['secondary_wf'] >= freq)])
+len(token_df[token_df['primary_wf'] >= freq])
+len(token_df[token_df['secondary_wf'] >= freq])
 
 
