@@ -20,6 +20,8 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+from matplotlib_venn import venn2
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.cross_validation import train_test_split
 
@@ -393,8 +395,42 @@ def create_token_df(description_vector, classifier_vector, primary_title, second
 token_df = create_token_df(X, y, titleA, titleB)
 
 
+# ==================== COMMON TOKENS =========================
+#from matplotlib_venn import venn2
+
+# Count of terms that appear frequently arcross documents
+freq = 0.3
+overlap = len(token_df[(token_df['primary_wf'] >= freq) & (token_df['secondary_wf'] >= freq)])
+prim = len(token_df[token_df['primary_wf'] >= freq])
+sec = len(token_df[token_df['secondary_wf'] >= freq])
 
 
+# Plot Venn Diagram for frequent terms
+plt.figure(figsize=(8,8))
+plt.title('Frequent Term Overlap\n per Role', size = 18, fontweight='bold')
+v = venn2(subsets = (prim, sec, overlap), set_labels = (titleA, titleB))
+v.get_patch_by_id('A').set_color('cornflowerblue')
+v.get_patch_by_id('A').set_alpha(1.0)
+v.get_patch_by_id('A').set_edgecolor('black')
+
+v.get_patch_by_id('B').set_color('sandybrown')
+v.get_patch_by_id('B').set_alpha(1.0)
+v.get_patch_by_id('B').set_edgecolor('black')
+
+v.get_patch_by_id('C').set_color('grey')
+
+for text in v.set_labels:
+    text.set_fontsize(16)
+
+for text in v.subset_labels:
+    text.set_fontsize(16)
+
+plt.show()
+
+
+# ============================================================
+# ===================== Token Context ========================
+# ============================================================
 
 def extract_surrounding_text(word, context_length, df):
     """ Create a dataframe with the jd title and the surrounding characters 
@@ -437,15 +473,5 @@ con_df = extract_surrounding_text('experience', 20, jds)
 # Examine the output
 con_df.head(10)
 
-
-
-
-
-
-# Venn Diagram of terms that appear in more than 30% of documents
-freq = 0.3
-len(token_df[(token_df['primary_wf'] >= freq) & (token_df['secondary_wf'] >= freq)])
-len(token_df[token_df['primary_wf'] >= freq])
-len(token_df[token_df['secondary_wf'] >= freq])
 
 
