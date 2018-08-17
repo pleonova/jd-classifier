@@ -40,7 +40,7 @@ from sklearn.cross_validation import cross_val_score
 
 # Folder where job description files are saved
 jd_folder = '/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data School/JDs Training & Test Docx'
-
+github_image_folder = '/Users/Leonova/Repos/jd-classifier/Images/'
 
 # =====================================================
 # ====================== Import Data ==================
@@ -425,7 +425,8 @@ for text in v.set_labels:
 for text in v.subset_labels:
     text.set_fontsize(16)
 
-plt.show()
+#plt.show()
+plt.savefig(github_image_folder + 'Common Job Terms.png')
 
 
 # ============================================================
