@@ -407,7 +407,14 @@ sec = len(token_df[token_df['secondary_wf'] >= freq])
 
 # Plot Venn Diagram for frequent terms
 plt.figure(figsize=(8,8))
-plt.title('Frequent Term Overlap\n per Role', size = 18, fontweight='bold')
+
+title_string = "Frequent Term Overlap\n per Role"
+subtitle_string = ("NOTE: Each term appears in at least {0:.0f}%\n of documents per role.").format(freq*100)
+
+plt.title(title_string,fontsize=18, fontweight='bold' )
+plt.suptitle(subtitle_string, y= .15, fontsize=14)
+
+
 v = venn2(subsets = (prim, sec, overlap), set_labels = (titleA, titleB))
 v.get_patch_by_id('A').set_color('cornflowerblue')
 v.get_patch_by_id('A').set_alpha(1.0)
@@ -424,8 +431,7 @@ for text in v.set_labels:
 
 for text in v.subset_labels:
     text.set_fontsize(16)
-
-#plt.show()
+    
 plt.savefig(github_image_folder + 'Common Job Terms.png')
 
 
