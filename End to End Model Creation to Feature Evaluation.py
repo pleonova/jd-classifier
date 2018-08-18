@@ -394,7 +394,7 @@ def create_token_df(description_vector, classifier_vector, primary_title, second
 # Use entire dataset to create the token dataframe from
 token_df = create_token_df(X, y, titleA, titleB)
 
-# ==================== Unique TOKENS =========================
+# ==================== Tornado Chart: Unique TOKENS =========================
 
 ################ CHART Bar Horizontal
 from pylab import *
@@ -403,7 +403,7 @@ from pylab import *
 primary_title = titleA
 secondary_title = titleB
 # Choose which title to sort for
-sort_for_title = secondary_title
+sort_for_title = primary_title
 
 
 # Reduce dataframe to top features only
@@ -417,33 +417,37 @@ else:
 bars = topT_df['token'].tolist()
 pos = arange(len(bars))    # the bar centers on the y axis
 
-fig, ax = plt.subplots()
-fig.set_size_inches(8, 7)
+#fig, ax = plt.subplots()
+#fig.set_size_inches(8, 7)
+plt.figure(figsize=(10,8))
+
 
 plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = primary_title)
 plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = secondary_title )
-plt.yticks(pos, bars, fontsize = 14)
+plt.yticks(pos, bars, fontsize = 16)
 plt.xlim(-1,1)
-plt.xticks(fontsize = 14)
-plt.xlabel("Weighted Frequency", fontsize = 14)
-plt.ylabel("Terms", fontsize = 14)
+plt.xticks(fontsize = 16)
+plt.xlabel("Weighted Frequency", fontsize = 16)
+plt.ylabel("Terms", fontsize = 16)
 # Change tick labels to be positive
 locs, labels = plt.xticks()
 labels = [abs(item) for item in locs]
 plt.xticks(locs, labels)
 
 title_string = "Most Frequent & Unique Terms\n for {}".format(sort_for_title)
-ttl = plt.title(title_string,fontsize=20, fontweight='bold' )
+ttl = plt.title(title_string,fontsize=22, fontweight='bold' )
 ttl.set_position([.5, 1.1])
-plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
-           ncol=2, mode="expand", borderaxespad=0.)
+
 subtitle_string = "Note: The terms are sorted by the difference between\n the weighted frequencies per each role."
-plt.suptitle(subtitle_string, y=-.01, fontsize=12)
+plt.suptitle(subtitle_string, y=-.01, fontsize=14)
+plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
+           ncol=2, mode="expand", borderaxespad=0., fontsize=14)
 
-plt.savefig(github_image_folder + 'Torando Chart - Term Sensitivity for ' + sort_for_title + '.png')
+plt.savefig(github_image_folder + 'Torando Chart - Term Sensitivity for ' + sort_for_title + '.png',
+            bbox_inches="tight")
 
 
-# ==================== Overlap TOKENS =========================
+# ==================== Venn Diagram: Overlap TOKENS =========================
 #from matplotlib_venn import venn2
 
 # Count of terms that appear frequently arcross documents
@@ -461,7 +465,7 @@ plt.figure(figsize=(8,8))
 
 title_string = "Frequent Term Overlap\n per Role"
 subtitle_string = ("NOTE: Each term appears in at least {0:.0f}%\n of documents per role.").format(freq*100)
-plt.title(title_string,fontsize=18, fontweight='bold' )
+plt.title(title_string,fontsize=22, fontweight='bold' )
 plt.suptitle(subtitle_string, y= .15, fontsize=14)
 
 v = venn2(subsets = (prim, sec, overlap), set_labels = (titleA, titleB))
