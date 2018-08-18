@@ -288,7 +288,7 @@ modified_stop_word_list = text.ENGLISH_STOP_WORDS.union(my_additional_stop_words
 
 # Modify the default model parameters based on intuition and previous exploration oh other paramters
 vect = CountVectorizer(binary=True,                                 # Count the word once per document, even if it appears multiple times (I want to not give extra emphasis to a word if it appears 10 times in one document, but rarerly in others)  
-                       ngram_range=(1, 3),                          # Capture 1 to 3 length word combinations (there might be some important phrases)
+                       ngram_range=(1, 2),                          # Capture 1 to 3 length word combinations (there might be some important phrases)
                        #token_pattern=r'(?u)\b\w\w+\b|r|C',          # R (should be included in the vocabulary)
                        token_pattern=r'(?u)\b\w+\b',                # Keep single character letters
                        stop_words = modified_stop_word_list,        # Including Data Science in the JD is 'cheating'
@@ -394,8 +394,43 @@ def create_token_df(description_vector, classifier_vector, primary_title, second
 # Use entire dataset to create the token dataframe from
 token_df = create_token_df(X, y, titleA, titleB)
 
+# ==================== Unique TOKENS =========================
 
-# ==================== COMMON TOKENS =========================
+################ CHART Bar Horizontal
+from pylab import *
+
+# Create horizontal bar plot
+topT_df = token_df.sort_values('wf_divergence', ascending = False).head(20)
+topT_df = topT_df.sort_values('wf_divergence', ascending = True).reset_index()
+
+bars = topT_df['token'].tolist()
+pos = arange(len(bars))+.5    # the bar centers on the y axis
+
+
+fig, ax = plt.subplots()
+fig.set_size_inches(8, 7)
+
+plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = titleA)
+#plt.barh(topT_df.index.values, 1-abs(topT_df['wf_divergence']), color='sandybrown', label = titleB )
+plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = titleB )
+plt.yticks(pos, bars, fontsize = 14)
+plt.xlim(-1,1)
+plt.xticks(fontsize = 14)
+plt.xlabel("Weighted Frequency", fontsize = 14)
+plt.ylabel("Terms", fontsize = 14)
+
+
+title_string = "Most Frequent & Unique Terms\n for {}".format(titleA)
+ttl = plt.title(title_string,fontsize=20, fontweight='bold' )
+ttl.set_position([.5, 1.1])
+plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
+           ncol=2, mode="expand", borderaxespad=0.)
+
+subtitle_string = "Note: The terms are sorted by\n the difference between of the weighted frequencies."
+plt.suptitle(subtitle_string, y=-.01, fontsize=12)
+
+
+# ==================== Overlap TOKENS =========================
 #from matplotlib_venn import venn2
 
 # Count of terms that appear frequently arcross documents
@@ -404,26 +439,25 @@ overlap = len(token_df[(token_df['primary_wf'] >= freq) & (token_df['secondary_w
 prim = len(token_df[token_df['primary_wf'] >= freq])
 sec = len(token_df[token_df['secondary_wf'] >= freq])
 
+# Which terms are frequent but don't appear in the other role?
+token_df_freq = token_df[(token_df['primary_wf'] >= freq) & (token_df['secondary_wf'] <= freq)]
+
 
 # Plot Venn Diagram for frequent terms
 plt.figure(figsize=(8,8))
 
 title_string = "Frequent Term Overlap\n per Role"
 subtitle_string = ("NOTE: Each term appears in at least {0:.0f}%\n of documents per role.").format(freq*100)
-
 plt.title(title_string,fontsize=18, fontweight='bold' )
 plt.suptitle(subtitle_string, y= .15, fontsize=14)
-
 
 v = venn2(subsets = (prim, sec, overlap), set_labels = (titleA, titleB))
 v.get_patch_by_id('A').set_color('cornflowerblue')
 v.get_patch_by_id('A').set_alpha(1.0)
 v.get_patch_by_id('A').set_edgecolor('black')
-
 v.get_patch_by_id('B').set_color('sandybrown')
 v.get_patch_by_id('B').set_alpha(1.0)
 v.get_patch_by_id('B').set_edgecolor('black')
-
 v.get_patch_by_id('C').set_color('grey')
 
 for text in v.set_labels:
