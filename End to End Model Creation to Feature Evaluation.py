@@ -399,35 +399,48 @@ token_df = create_token_df(X, y, titleA, titleB)
 ################ CHART Bar Horizontal
 from pylab import *
 
-# Create horizontal bar plot
-topT_df = token_df.sort_values('wf_divergence', ascending = False).head(20)
-topT_df = topT_df.sort_values('wf_divergence', ascending = True).reset_index()
+# Update parameters
+primary_title = titleA
+secondary_title = titleB
+# Choose which title to sort for
+sort_for_title = secondary_title
+
+
+# Reduce dataframe to top features only
+if sort_for_title == primary_title: 
+    topT_df = token_df.sort_values('wf_divergence', ascending = True).tail(20).reset_index()
+else:
+    topT_df = token_df.sort_values('wf_divergence', ascending = True).head(20)
+    # Re-order results and reset index
+    topT_df = topT_df.sort_values('wf_divergence', ascending = False).reset_index()
 
 bars = topT_df['token'].tolist()
-pos = arange(len(bars))+.5    # the bar centers on the y axis
-
+pos = arange(len(bars))    # the bar centers on the y axis
 
 fig, ax = plt.subplots()
 fig.set_size_inches(8, 7)
 
-plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = titleA)
-#plt.barh(topT_df.index.values, 1-abs(topT_df['wf_divergence']), color='sandybrown', label = titleB )
-plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = titleB )
+plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = primary_title)
+plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = secondary_title )
 plt.yticks(pos, bars, fontsize = 14)
 plt.xlim(-1,1)
 plt.xticks(fontsize = 14)
 plt.xlabel("Weighted Frequency", fontsize = 14)
 plt.ylabel("Terms", fontsize = 14)
+# Change tick labels to be positive
+locs, labels = plt.xticks()
+labels = [abs(item) for item in locs]
+plt.xticks(locs, labels)
 
-
-title_string = "Most Frequent & Unique Terms\n for {}".format(titleA)
+title_string = "Most Frequent & Unique Terms\n for {}".format(sort_for_title)
 ttl = plt.title(title_string,fontsize=20, fontweight='bold' )
 ttl.set_position([.5, 1.1])
 plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
            ncol=2, mode="expand", borderaxespad=0.)
-
-subtitle_string = "Note: The terms are sorted by\n the difference between of the weighted frequencies."
+subtitle_string = "Note: The terms are sorted by the difference between\n the weighted frequencies per each role."
 plt.suptitle(subtitle_string, y=-.01, fontsize=12)
+
+plt.savefig(github_image_folder + 'Torando Chart - Term Sensitivity for ' + sort_for_title + '.png')
 
 
 # ==================== Overlap TOKENS =========================
@@ -466,7 +479,7 @@ for text in v.set_labels:
 for text in v.subset_labels:
     text.set_fontsize(16)
     
-plt.savefig(github_image_folder + 'Common Job Terms.png')
+plt.savefig(github_image_folder + 'Venn Diagram - Frequent Terms.png')
 
 
 # ============================================================
