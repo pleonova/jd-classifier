@@ -11,9 +11,11 @@ Updated on Thurs Aug 16 11:03:00 2018
 # ===================================================
 # ====================== Set Up =====================
 # ===================================================
+"""
+Import relevant modules all at once
+I have also added a comment in each code section for relevant modules
+"""
 
-# Import relevant modules all at once
-# I have also added a comment in each code section for relevant modules
 import os
 import pandas as pd
 import numpy as np
@@ -24,6 +26,7 @@ from matplotlib_venn import venn2
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.cross_validation import train_test_split
+from sklearn import metrics
 
 
 import glob
@@ -43,7 +46,7 @@ jd_folder = '/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data 
 github_image_folder = '/Users/Leonova/Repos/jd-classifier/Images/'
 
 # =====================================================
-# ====================== Import Data ==================
+# ==================== Data Prep ======================
 # =====================================================
 #import glob
 #import docx
@@ -70,8 +73,7 @@ def create_df_for_jds(roles_folder, titleA, identifierA, titleB, titleB_primary)
     titleB_primary : False if titleB will be the 1 in our binary classifier
     """
 
-    
-    ################## PART 1: Aggregate all files in the folder  #############
+    # --------------- PART 1: Aggregate all files in the folder  -------------#
     # Change Directory to where the files are located
     os.chdir(jd_folder)
     
@@ -89,7 +91,7 @@ def create_df_for_jds(roles_folder, titleA, identifierA, titleB, titleB_primary)
     for filename in text_filenames:
         file_text.append(getText(filename))
 
-    #################### PART 2: Clean up the job titles  #####################
+     # --------------- PART 2: Clean up the job titles -----------------------#
     # Convert the lists into a DataFrame
     df = pd.DataFrame({'title':text_filenames, 'description':file_text})
     # Clean up the title column
@@ -125,9 +127,10 @@ jds = create_df_for_jds(jd_folder, titleA, 'cientist', titleB, False)
 j = pd.DataFrame.copy(jds[['is_primary_role', 'description' ]])
 
 
-# ===========================================================
-# # ==================== Train and Test  ====================
-# ===========================================================
+
+# ----------------------------------------------
+# ------------ Train and Test ---------
+# ----------------------------------------------
 #from sklearn.cross_validation import train_test_split
 
 # Split the data into two vectors
@@ -152,7 +155,7 @@ print(y_test.value_counts())
 
 
 # ============================================================
-# ==================== Feature engineering  ==================
+# ============= Feature Exploration/Engineering  =============
 # ============================================================
 #import re
 #import itertools 
@@ -206,7 +209,6 @@ is_a_match(jds, 'title', re_senior_titles, 'is_senior_title')
 
 
 
-
 # Create a function that adds new features as columns to the dataframe
 def make_features(df):
     # Create two columns (1) minimum years of experience (2) range from min to max years of experience
@@ -214,12 +216,10 @@ def make_features(df):
 
 
 
+# ----------------------------------------------
+# ------------ CHART: Boxplot & Violin ---------
+# ----------------------------------------------
 
-
-
-#######################################
-####### Boxplot & Violin Charts #######
-#######################################
 #import seaborn as sns   
 '''
 Is there a difference between the years of experience for the roles?
@@ -244,7 +244,7 @@ ax = sns.violinplot(x='is_senior_title', y='min_years', hue='is_primary_role', d
 
 
 # Graph 3
-# remove senior roles
+# Remove senior roles
 jds[(jds['min_years'].notnull()) & jds['is_senior_title']==0]
 plt.clf()
 sns.set(font_scale = 2)
@@ -268,8 +268,12 @@ x_val = 'short_title'
 
 
 # ============================================================
-# =========================== Model ==========================
+# =========== Data Preprocessing & Model Optimization ========
 # ============================================================
+
+# -------------------------------------
+# ------------- Tokenizer -------------
+# -------------------------------------
 #from sklearn.feature_extraction import text 
 
 # Create a special list of words that give my model an unfair predictive power
@@ -286,7 +290,7 @@ my_additional_stop_words = ['scientist',
 # Add my modified list of exceptions to the default list of stopwords                
 modified_stop_word_list = text.ENGLISH_STOP_WORDS.union(my_additional_stop_words)
 
-# Modify the default model parameters based on intuition and previous exploration oh other paramters
+# Modify the default parameters based on intuition and previous exploration oh other paramters
 vect = CountVectorizer(binary=True,                                 # Count the word once per document, even if it appears multiple times (I want to not give extra emphasis to a word if it appears 10 times in one document, but rarerly in others)  
                        ngram_range=(1, 2),                          # Capture 1 to 3 length word combinations (there might be some important phrases)
                        #token_pattern=r'(?u)\b\w\w+\b|r|C',          # R (should be included in the vocabulary)
@@ -317,10 +321,13 @@ default token_pattern='(?u)\b\w\w+\b'
 nb = MultinomialNB()
 
 
+# ============================================================
+# ==================== Model Validation  =====================
+# ============================================================
 
-# ============================================================
-# ======================== Pipeline ==========================
-# ============================================================
+# -------------------------------------
+# -------------- Pipeline -------------
+# -------------------------------------
 # By creating a pipeline, you are ensuring that you use cross-validataion correctly
 # create a pipeline of vectorization and Naive Bayes
 # from sklearn.pipeline import make_pipeline
@@ -329,17 +336,54 @@ pipe = make_pipeline(vect, nb)
 # examine the pipeline steps
 pipe.steps
 
-
-# ============================================================
-# ================== Cross Validation ========================
-# ============================================================
+# -------------------------------------
+# ---------- Cross Validation ---------
+# -------------------------------------
 # Cross-validate the entire pipeline 
 # from sklearn.cross_validation import cross_val_score
 cross_val_score(pipe, X, y, cv=10, scoring='accuracy').mean()
 
 
+
+# -------------------------------------
+# ---------- Model Accuracy -----------
+# -------------------------------------
+#from sklearn import metrics
+y_pred_class = nb.predict(X_test_dtm)
+metrics.accuracy_score(y_test, y_pred_class)
+
+
+#  --------------- Confusion Matrix ---------------- #
+# print the confusion matrix (top right: false positives, bottom left: false negatives)
+metrics.confusion_matrix(y_test, y_pred_class)
+
+#  --------------- False Positives/False Negatives ---------------- #
+# print message text for the false positives (meaning they were incorrectly classified as spam)
+# example: A man being told he is pregnant..
+falsePositives = X_test[y_test < y_pred_class]
+print(falsePositives)
+# Specifically examine the false_positives and the false_negatives in original data
+fP = falsePositives.index.values
+jds.loc[fP, :]
+
+
+# print message text for the false negatives (meaning they were incorrectly classified as ham)
+# example: a pregnant woman is told she is not pregnant
+falseNegatives = X_test[y_test > y_pred_class]
+print(falseNegatives)
+fN = falseNegatives.index.values
+jds.loc[fN, :]
+
+
+### Examine original data set but use the index to extract the relevant data (based on whether using train or test)
+index_list = X_test.index.values
+jds.loc[index_list, :]
+
+
+
+
 # ============================================================
-# ===================== Top Tokens ===========================
+# ===================== Token Exploration ====================
 # ============================================================
 # Naives bayes essentially used the weighted frequency of each word/phrase
 # Isolate the top words/phrases that are associated with each role
@@ -394,9 +438,11 @@ def create_token_df(description_vector, classifier_vector, primary_title, second
 # Use entire dataset to create the token dataframe from
 token_df = create_token_df(X, y, titleA, titleB)
 
-# ==================== Tornado Chart: Unique TOKENS =========================
 
-################ CHART Bar Horizontal
+
+# -------------------------------------
+# ---------- CHART: Tornado -----------
+# -------------------------------------
 from pylab import *
 
 # Update parameters
@@ -447,7 +493,10 @@ plt.savefig(github_image_folder + 'Torando Chart - Term Sensitivity for ' + sort
             bbox_inches="tight")
 
 
-# ==================== Venn Diagram: Overlap TOKENS =========================
+
+# -------------------------------------
+# ------- CHART: Venn Diagram ---------
+# -------------------------------------
 #from matplotlib_venn import venn2
 
 # Count of terms that appear frequently arcross documents
@@ -486,10 +535,9 @@ for text in v.subset_labels:
 plt.savefig(github_image_folder + 'Venn Diagram - Frequent Terms.png')
 
 
-# ============================================================
-# ===================== Token Context ========================
-# ============================================================
-
+# -------------------------------------
+# ---------- Token Context -----------
+# -------------------------------------
 def extract_surrounding_text(word, context_length, df):
     """ Create a dataframe with the jd title and the surrounding characters 
     for the given term/phrase. This allows the user to explore the key term

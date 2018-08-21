@@ -15,20 +15,25 @@ For a more detailed write up of the results, please see my blog post ().
  
 ## Process
 
-#### Data collection: 
-I collected a total of 34 unique jobs primarily from big tech companies in Silicon Valley and a handful of smaller companies.
+##### Data Collection: 
+- I collected a total of 34 unique jobs primarily from big tech companies in Silicon Valley and a handful of smaller companies.
 
-#### Data prepartion: 
-I used `CountVectorizer()`, a python scikit-learn library, to create the document-term matrix.I further optimized my model performance by modifying the default parameters such as the n-gram size, the length of tokens, token frequency within each document and the list of stop words.
+#### Data Preparation:
+- I stored all the job descriptions in one folder in the .docx format. Each file's name has the company name followed by the title of the role.
+- Function `create_df_for_jds()`: Loops through all files in the folder containing the job postings in order to create a dataframe with columns for the the full file name, description, simplified title and yes/no classifier for primary role.
+- Split the data into train/test
 
-#### Feature Engineering:
+#### Feature Exploration/Engineering:
+- Function `years_of_experience()`: Extracts the number of years listed in the job requirements using regular expressions and creates an additional column in the JD dataframe. If a job has a range for years of experience, the difference between the lower and upper bound is added to a separate column.
+- Function `is_a_match()`: Finds matches for a given regex for the selected column. (example: creates a yes/no column for whether principal, senior or sr appears in the JD)
+- Chart Box-plot and Violin: Explore the distribution of years of experience within the sample of JDs.
 
-#### Model Selection: 
-I tried logistic regression, but found multinomial naive bayes to return better results.
+##### Data Preprocessing & Model Optimization: 
+- I used `CountVectorizer()`, a python scikit-learn library, to create the document-term matrix. I further optimized my model performance by modifying the default parameters such as the n-gram size, the length of tokens, token frequency within each document and the list of stop words.
+- I tried logistic regression, but found multinomial naive bayes to return better results.
 
 #### Model Validation: 
-- I created a pipeline for the tokenizer and model. 
-- I used cross-validation to test my model accuracy.
+- I created a pipeline for the tokenizer and model and used cross-validation to test my model accuracy.
 
 #### Token Exploration:
 - Function `create_token_df()`: Creates a dataframe of count of tokens and their weighted frequency for each role. 
@@ -36,10 +41,14 @@ I tried logistic regression, but found multinomial naive bayes to return better 
 - Chart - Venn Diagram: Shows a count of common and unqiue terms for each role, conditional on having those terms appear in at least 30% of jop postings per role.
 - Function `extract_surrounding_text()`: Extracts n number of characters that surround a given word/phrase in a text file with the goal of learning more about the context in which a given keyword was used in.
 
-
 ## Next Steps
+- Split out the main file into smaller code files for easier management
 - Collect more job samples using `BeautifulSoup`
 - Further tune the model parameters using `GridSearchCV`
+- Create four separate classifiers (junior and senior for each role)
+- Try a clustering algorithm without a training set to see which jobs get automatically grouped
+- Generalize this model for other job pairings
 
 ## Future Questions
 - How does my model stand up against future job postings? What new terms will become common? Will the distinction between data analyst and data scientist become more grey?
+
