@@ -45,12 +45,12 @@ For a more detailed write up of the results, please see my blog post ().
 - Function `extract_surrounding_text()`: Extracts n number of characters that surround a given word/phrase in a text file with the goal of learning more about the context in which a given keyword was used in.
 
 ## Next Steps
-- Split out the main file into smaller code files for easier management
-- Collect more job samples using `BeautifulSoup`
-- Further tune the model parameters using `GridSearchCV`
-- Create four separate classifiers (junior and senior for each role)
-- Try a clustering algorithm without a training set to see which jobs get automatically grouped
-- Generalize this model for other job pairings
+- [] Split out the main file into smaller code files for easier management
+- [] Collect more job samples using `BeautifulSoup`
+- [] Further tune the model parameters using `GridSearchCV`
+- [] Create four separate classifiers (junior and senior for each role)
+- [] Try a clustering algorithm without a training set to see which jobs get automatically grouped
+- [] Generalize this model for other job pairings
 
 ## Future Questions
 - How does my model stand up against future job postings? What new terms will become common? Will the distinction between data analyst and data scientist become more grey?
