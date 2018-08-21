@@ -466,33 +466,42 @@ token_df = create_token_df(X, y, titleA, titleB)
 # -------------------------------------
 #from pylab import *
 
-# Update parameters
+# Set up parameters
 primary_title = titleA
 secondary_title = titleB
+x_axis_max = 1.0
+both_titles = "Both Roles"
+
+
+# ------------   Choose Sorting Order ---------------------
 # Choose which title to sort for
-sort_for_title = secondary_title
+sort_for_title = both_titles
 
-
+# ------------  Create Tornado Chart ---------------------
 # Reduce dataframe to top features only
-if sort_for_title == primary_title: 
+if sort_for_title == both_titles:   ## Sort for popularity for BOTH
+    topT_df = token_df.sort_values('wf_average', ascending = False).head(20)
+    # Re-order results and reset index (top result to appear on the bottom)
+    topT_df = topT_df.sort_values('wf_average', ascending = True).reset_index()
+    x_axis_max = 1.1
+elif sort_for_title == primary_title: 
     topT_df = token_df.sort_values('wf_divergence', ascending = True).tail(20).reset_index()
 else:
     topT_df = token_df.sort_values('wf_divergence', ascending = True).head(20)
     # Re-order results and reset index
     topT_df = topT_df.sort_values('wf_divergence', ascending = False).reset_index()
+    
 
+# Set up axis variables
 bars = topT_df['token'].tolist()
 pos = arange(len(bars))    # the bar centers on the y axis
 
-#fig, ax = plt.subplots()
-#fig.set_size_inches(8, 7)
 plt.figure(figsize=(10,8))
-
 
 plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = primary_title)
 plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = secondary_title )
 plt.yticks(pos, bars, fontsize = 16)
-plt.xlim(-1,1)
+plt.xlim(-x_axis_max,x_axis_max)
 plt.xticks(fontsize = 16)
 plt.xlabel("Weighted Frequency", fontsize = 16)
 plt.ylabel("Terms", fontsize = 16)
