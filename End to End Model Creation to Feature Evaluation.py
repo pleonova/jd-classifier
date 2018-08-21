@@ -365,15 +365,14 @@ nb.fit(X_train_dtm, y_train)
 y_pred_class = nb.predict(X_test_dtm)
 
 
-
-# -------------------------------------
-# ---------- Model Accuracy -----------
-# -------------------------------------
+# Explore the accuracy of this single fold validation
 #from sklearn import metrics
 metrics.accuracy_score(y_test, y_pred_class)
 
+# -------------------------------------
+# ---------- Confusion Matrix -----------
+# -------------------------------------
 
-#  --------------- Confusion Matrix ---------------- #
 # print the confusion matrix (top right: false positives, bottom left: false negatives)
 metrics.confusion_matrix(y_test, y_pred_class)
 

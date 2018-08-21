@@ -13,6 +13,9 @@ I was happy to see that the top terms that appeared for each role were in line w
 
 ![Data Scientist](https://github.com/pleonova/jd-classifier/blob/master/Images/Torando%20Chart%20-%20Term%20Sensitivity%20for%20Data%20Scientist.png "Terms sorted for Data Scientist")
 
+<a href="url"><img src="https://github.com/pleonova/jd-classifier/blob/master/Images/Torando%20Chart%20-%20Term%20Sensitivity%20for%20Analyst.png" align="left" height="48" width="48" ></a>
+
+
 For a more detailed write up of the results, please see my blog post ().
  
 ## Process
