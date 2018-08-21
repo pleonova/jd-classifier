@@ -584,11 +584,13 @@ def extract_surrounding_text(word, context_length, df):
     # Reset variables
     extracted_text = []
     jd_title = []
+    jd_short_title = []
     context_df = pd.DataFrame()
 
     for row in range(len(jds)):
         string_text = df['description'][row].lower()
         jd_name = df['title'][row]
+        jd_short_name = df['short_title'][row]
         # Find the location of all the words in the string   
         loc = [m.start() for m in re.finditer(word, string_text)]
         
@@ -597,15 +599,17 @@ def extract_surrounding_text(word, context_length, df):
             contextual_string = string_text[loc[i]-context_length:loc[i]+context_length]
             extracted_text.append(contextual_string)
             jd_title.append(jd_name)
+            jd_short_title.append(jd_short_name)
 
     context_df['title'] = jd_title
+    context_df['short_title'] = jd_short_title
     context_df['string_context'] = extracted_text
     return context_df
 
 
 
 # Find all the job postings that have the following word & surrounding characters
-con_df = extract_surrounding_text('experience', 20, jds)
+con_df = extract_surrounding_text('statistics', 20, jds)
 # Examine the output
 con_df.head(10)
 
