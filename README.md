@@ -40,3 +40,6 @@ I tried logistic regression, but found multinomial naive bayes to return better 
 ## Next Steps
 - Collect more job samples using `BeautifulSoup`
 - Further tune the model parameters using `GridSearchCV`
+
+## Future Questions
+- How does my model stand up against future job postings? What new terms will become common? Will the distinction between data analyst and data scientist become more grey?
