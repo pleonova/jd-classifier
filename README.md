@@ -11,7 +11,7 @@ My Multinomial Naive Bayes model was able to **predict 76%** of job cases correc
 
 I was happy to see that the top terms that appeared for each role were in line with what I expected.
 
-<img src="https://github.com/pleonova/jd-classifier/blob/master/Images/TorandoChart_TermSensitivity_DataScientist.png" width="400"> <img src="https://github.com/pleonova/jd-classifier/blob/master/Images/TorandoChart_TermSensitivity_ Analyst.png" width="400" align="right">
+<img src="https://github.com/pleonova/jd-classifier/blob/master/Images/TorandoChart_TermSensitivity_DataScientist.png" width="400"> <img src="https://github.com/pleonova/jd-classifier/blob/master/Images/TorandoChart_TermSensitivity_Analyst.png" width="400" align="right">
 
 For a more detailed write up of the results, please see my blog post ().
  
