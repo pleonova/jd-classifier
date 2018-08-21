@@ -508,7 +508,7 @@ plt.suptitle(subtitle_string, y=-.01, fontsize=14)
 plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
            ncol=2, mode="expand", borderaxespad=0., fontsize=14)
 
-plt.savefig(github_image_folder + 'Torando Chart - Term Sensitivity for ' + sort_for_title + '.png',
+plt.savefig(github_image_folder + 'TorandoChart_TermSensitivity_ ' + sort_for_title.replace(" ", "") + '.png',
             bbox_inches="tight")
 
 
@@ -551,7 +551,7 @@ for text in v.set_labels:
 for text in v.subset_labels:
     text.set_fontsize(16)
     
-plt.savefig(github_image_folder + 'Venn Diagram - Frequent Terms.png')
+plt.savefig(github_image_folder + 'VennDiagram_FrequentTerms.png')
 
 
 # -------------------------------------
