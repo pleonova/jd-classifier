@@ -14,15 +14,19 @@ I was happy to see that the top terms that appeared for each role were in line w
 For a more detailed write up of the results, please see my blog post ().
  
 ## Process/Content
-- Data collection: I collected a total of 34 unique jobs primarily from big tech companies in Silicon Valley and a handful of smaller companies.
-- Data prepartion: I used `CountVectorizer()`, a python scikit-learn library, to create the document-term matrix.I further optimized my model performance by modifying the default parameters such as the n-gram size, the length of tokens, token frequency within each document and the list of stop words.
+
+##### Data collection: 
+I collected a total of 34 unique jobs primarily from big tech companies in Silicon Valley and a handful of smaller companies.
+
+##### Data prepartion: 
+I used `CountVectorizer()`, a python scikit-learn library, to create the document-term matrix.I further optimized my model performance by modifying the default parameters such as the n-gram size, the length of tokens, token frequency within each document and the list of stop words.
 - Feature Engineering:
 - Model Selection: I tried logistic regression, but found multinomial naive bayes to return better results.
 - Model Validation: (1) Created a pipeline for the tokenizer and model (2) Used cross-validation to test my model accuracy.
 
 
-### Token Exploration
-- Function `create_token_df`: Creates a dataframe of count of tokens and their weighted frequency for each role. 
+##### Token Exploration
+- Function `create_token_df()`: Creates a dataframe of count of tokens and their weighted frequency for each role. 
 - Chart - Tornado: Isolate which terms appear most frequently for a given role. 
 - Chart - Venn Diagram: Shows a count of common and unqiue terms for each role, conditional on having those terms appear in at least 30% of jop postings per role.
 - Function `extract_surrounding_text()`: Extracts n number of characters that surround a given word/phrase in a text file with the goal of learning more about the context in which a given keyword was used in.
