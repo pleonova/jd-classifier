@@ -128,32 +128,6 @@ j = pd.DataFrame.copy(jds[['is_primary_role', 'description' ]])
 
 
 
-# ----------------------------------------------
-# ------------ Train and Test ---------
-# ----------------------------------------------
-#from sklearn.cross_validation import train_test_split
-
-# Split the data into two vectors
-X = j.description
-y = j.is_primary_role
-
-# (1) First split into train and test (30%)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=2)
-# (2*) Then split the remaining train into train and validation 
-# *use this if you have a lot of data and don't want contanimate the test sample as you train your model
-# X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=3)
-
-# Examine Shape of Data and save the X_val for later analysis
-print(X_train.shape)
-print(X_test.shape)
-#print(X_val.shape)  
-
-# How many features are in our training/test set
-print(y_train.value_counts())
-print(y_test.value_counts())
-
-
-
 # ============================================================
 # ============= Feature Exploration/Engineering  =============
 # ============================================================
@@ -321,6 +295,9 @@ default token_pattern='(?u)\b\w\w+\b'
 nb = MultinomialNB()
 
 
+
+
+
 # ============================================================
 # ==================== Model Validation  =====================
 # ============================================================
@@ -342,6 +319,50 @@ pipe.steps
 # Cross-validate the entire pipeline 
 # from sklearn.cross_validation import cross_val_score
 cross_val_score(pipe, X, y, cv=10, scoring='accuracy').mean()
+cross_val_score(pipe, X, y, cv=10, scoring='roc_auc').mean()
+
+
+
+
+
+# ----------------------------------------------
+# ------------ Train and Test ---------
+# ----------------------------------------------
+#from sklearn.cross_validation import train_test_split
+
+# Split the data into two vectors
+X = j.description
+y = j.is_primary_role
+
+# (1) First split into train and test (30%)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=2)
+# (2*) Then split the remaining train into train and validation 
+# *use this if you have a lot of data and don't want contanimate the test sample as you train your model
+# X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=3)
+
+# Examine Shape of Data and save the X_val for later analysis
+print(X_train.shape)
+print(X_test.shape)
+#print(X_val.shape)  
+
+# How many features are in our training/test set
+print(y_train.value_counts())
+print(y_test.value_counts())
+
+
+# -------------------------------------
+# ------ Fit Model on Train Set--------
+# -------------------------------------
+# learn training data vocabulary, then use it to create a document-term matrix
+vect.fit(X_train)
+X_train_dtm = vect.transform(X_train)
+# Examine the fitted tokens
+# vect.get_feature_names()
+
+X_test_dtm = vect.transform(X_test)
+
+nb.fit(X_train_dtm, y_train)
+y_pred_class = nb.predict(X_test_dtm)
 
 
 
@@ -349,7 +370,6 @@ cross_val_score(pipe, X, y, cv=10, scoring='accuracy').mean()
 # ---------- Model Accuracy -----------
 # -------------------------------------
 #from sklearn import metrics
-y_pred_class = nb.predict(X_test_dtm)
 metrics.accuracy_score(y_test, y_pred_class)
 
 
