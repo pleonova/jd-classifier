@@ -23,6 +23,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 from matplotlib_venn import venn2
+from pylab import *
+
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.cross_validation import train_test_split
@@ -462,7 +464,7 @@ token_df = create_token_df(X, y, titleA, titleB)
 # -------------------------------------
 # ---------- CHART: Tornado -----------
 # -------------------------------------
-from pylab import *
+#from pylab import *
 
 # Update parameters
 primary_title = titleA

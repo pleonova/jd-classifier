@@ -6,6 +6,7 @@ matplotlib_venn
 numpy
 os
 pandas
+pylab
 re
 seaborn
 sklearn
