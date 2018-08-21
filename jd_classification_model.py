@@ -519,18 +519,19 @@ plt.suptitle(subtitle_string, y=-.01, fontsize=14)
 plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
            ncol=2, mode="expand", borderaxespad=0., fontsize=14)
 
-plt.savefig(github_image_folder + 'TorandoChart_TermSensitivity_ ' + sort_for_title.replace(" ", "") + '.png',
+plt.savefig(github_image_folder + 'TorandoChart_TermSensitivity_' + sort_for_title.replace(" ", "") + '.png',
             bbox_inches="tight")
 
 # -------------------------------------
 # ------- CHART: Bar Graph   ---------
 # -------------------------------------
 # Term dispersion
-column_sort = 'primary_wf'
-plt.title(column_sort,fontsize=22, fontweight='bold' )
+column_sort = 'secondary_wf'
+plt.title(('Term Dispersion: ' + column_sort),fontsize=22, fontweight='bold' )
 plt.bar(token_df.sort_values(column_sort, ascending = False).head(100).reset_index().index.values, 
         token_df.sort_values(column_sort, ascending = False)[column_sort].head(100))
-
+plt.savefig(github_image_folder + ('BarGraph_TermDispersion_' + column_sort) + '.png',
+            bbox_inches="tight")
 # -------------------------------------
 # ------- CHART: Venn Diagram ---------
 # -------------------------------------
