@@ -403,7 +403,7 @@ from pylab import *
 primary_title = titleA
 secondary_title = titleB
 # Choose which title to sort for
-sort_for_title = primary_title
+sort_for_title = secondary_title
 
 
 # Reduce dataframe to top features only
