@@ -522,7 +522,14 @@ plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
 plt.savefig(github_image_folder + 'TorandoChart_TermSensitivity_ ' + sort_for_title.replace(" ", "") + '.png',
             bbox_inches="tight")
 
-
+# -------------------------------------
+# ------- CHART: Bar Graph   ---------
+# -------------------------------------
+# Term dispersion
+column_sort = 'primary_wf'
+plt.title(column_sort,fontsize=22, fontweight='bold' )
+plt.bar(token_df.sort_values(column_sort, ascending = False).head(100).reset_index().index.values, 
+        token_df.sort_values(column_sort, ascending = False)[column_sort].head(100))
 
 # -------------------------------------
 # ------- CHART: Venn Diagram ---------
@@ -609,7 +616,7 @@ def extract_surrounding_text(word, context_length, df):
 
 
 # Find all the job postings that have the following word & surrounding characters
-con_df = extract_surrounding_text('statistics', 20, jds)
+con_df = extract_surrounding_text('statistics', 30, jds)
 # Examine the output
 con_df.head(10)
 
