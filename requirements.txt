@@ -1,0 +1,11 @@
+docx
+glob
+itertools
+matplotlib
+matplotlib_venn
+numpy
+os
+pandas
+re
+seaborn
+sklearn
