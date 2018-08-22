@@ -47,6 +47,7 @@ For a more detailed write up of the results, please see my blog post ().
 ## Next Steps
 - [x] Add confusion matrix
 - [ ] Split out the main file into smaller code files for easier management
+- [ ] Use Latent Dirichlet Allocation to find topic themes
 - [ ] Identify which section requirements are listed in (nice to haves, bottom, top, requirements, etc.) 
 - [ ] Collect more job samples using `BeautifulSoup`
 - [ ] Further tune the model parameters using `GridSearchCV`
