@@ -50,6 +50,7 @@ For a more detailed write up of the results, please see [my blog post](https://p
 - [ ] Use Latent Dirichlet Allocation to find topic themes
 - [ ] Identify which section requirements are listed in (nice to haves, bottom, top, requirements, etc.) 
 - [ ] Collect more job samples using `BeautifulSoup`
+- [ ] Identify whether there is some sort of regional pattern
 - [ ] Further tune the model parameters using `GridSearchCV`
 - [ ] Create four separate classifiers (junior and senior for each role)
 - [ ] Try a clustering algorithm without a training set to see which jobs get automatically grouped
