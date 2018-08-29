@@ -15,7 +15,6 @@ I was happy to see that the top terms that appeared for each role were in line w
 
 For a more detailed write up of the results, please see **[my blog post](https://pleonova.github.io/jd-classification/)**.
  
- </n>
 ## Contents
 
 - jd_classification.py
