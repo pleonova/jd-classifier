@@ -19,7 +19,7 @@ For a more detailed write up of the results, please see [my blog post](https://p
 ## Contents
 
 #### jd_classification.py
-- This is the main file where the model is built and tested as well as where the token exploration happens (work in progress: modularize this more, see Next Steps).
+- This is the main file where the model is built and tested as well as where the token exploration happens (WIP: modularize this more, see Next Steps).
 
 #### clean_data.py
 - Will eventually contain all the functions that are used to clean and extract data from the original input files.
@@ -28,13 +28,10 @@ For a more detailed write up of the results, please see [my blog post](https://p
 - List of all the packages/libraries used in the jd_classification.py
 
 #### images (folder)
-- Contains all the chart outputs.
+- Contains all the chart outputs
 
-#### other_models (folder)
-- Contains other models built of the same data
-
-#### jd_files* (folder)
-- This is the folder that contains all the JDs, currently this is on my hard drive. 
+#### jd_files (folder)
+- Contains all the job descriptions text files
 
  
 ## Process
