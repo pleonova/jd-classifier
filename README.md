@@ -13,19 +13,17 @@ I was happy to see that the top terms that appeared for each role were in line w
 
 <img src="https://github.com/pleonova/jd-classifier/blob/master/images/TorandoChart_TermSensitivity_DataScientist.png" width="400"> <img src="https://github.com/pleonova/jd-classifier/blob/master/images/TorandoChart_TermSensitivity_Analyst.png" width="400" align="right">
 
-For a more detailed write up of the results, please see [my blog post](https://pleonova.github.io/jd-classification/).
+For a more detailed write up of the results, please see **[my blog post](https://pleonova.github.io/jd-classification/)**.
  
  
 ## Contents
 
-#### jd_classification.py
-- This is the main file where the model is built and tested as well as where the token exploration happens (WIP: modularize this more, see Next Steps).
-
-#### clean_data.py
-- Will eventually contain all the functions that are used to clean and extract data from the original input files.
-
-#### requirements.txt
-- List of all the packages/libraries used in the jd_classification.py
+- jd_classification.py
+    - This is the main file where the model is built and tested as well as where the token exploration happens (WIP: modularize this more, see Next Steps).
+- clean_data.py
+    - Will eventually contain all the functions that are used to clean and extract data from the original input files.
+- requirements.txt
+    - List of all the packages/libraries used in the jd_classification.py
 
 #### images (folder)
 - Contains all the chart outputs
