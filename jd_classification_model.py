@@ -43,92 +43,34 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.cross_validation import cross_val_score
 
 
-# Folder where job description files are saved
+# Folder pathways
+github_function_folder = '/Users/Leonova/Repos/jd-classifier/'
 jd_folder = '/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data School/JDs Training & Test Docx'
 github_image_folder = '/Users/Leonova/Repos/jd-classifier/images/'
 
-# 
+# Import special functions
+import clean_data as cld
+
 
 # =====================================================
 # ==================== Data Prep ======================
 # =====================================================
-#import glob
-#import docx
 
-def create_df_for_jds(roles_folder, titleA, identifierA, titleB, titleB_primary):
-    """ Create a dataframe from a folder containing job posting .docx files.
-    
-    Each row has the job title (name of the file), shortened/simplified title,
-    full job description, and boolean classifier.
-    
-    
-    PARAMETERS
-    roles_folder : location of folder where all the job .docx files are stored
-    
-    titleA : short title for a subset of jobs in the folder
-    
-    identifierA : part of the job title that is used to distinguish titleA jobs
-    (Ex. 'analyst' in Marketing Data Analyst or 
-    'cientist' in "Staff Data Scientist")
-    
-    titleB : short title  for other subset of jobs (this is the tile that will 
-    be given to the rest of the jobs that were not picked up by the identifier)
-    
-    titleB_primary : False if titleB will be the 1 in our binary classifier
-    """
-
-    # --------------- PART 1: Aggregate all files in the folder  -------------#
-    # Change Directory to where the files are located
-    os.chdir(jd_folder)
-    
-    # All files have been stored as .docx
-    text_filenames = glob.glob('*.docx')
-    
-    def getText(filename):
-        doc = docx.Document(filename)
-        fullText = []
-        for para in doc.paragraphs:
-            fullText.append(para.text)
-        return '\n'.join(fullText)    
-    
-    file_text = []
-    for filename in text_filenames:
-        file_text.append(getText(filename))
-
-     # --------------- PART 2: Clean up the job titles -----------------------#
-    # Convert the lists into a DataFrame
-    df = pd.DataFrame({'title':text_filenames, 'description':file_text})
-    # Clean up the title column
-    df['title'] = df['title'].str.replace(".docx", "")
-    
-    # Identify if the job contains the key identifier
-    df['is_primary_role'] = df.title.str.contains(identifierA).astype(int)
-    
-    # Instead of using a loop, use the replace method
-    df['short_title'] = df['is_primary_role'].replace(1, titleA)
-    # Use the short_title column to replace the remaining 0s to Analyst
-    df['short_title'] = df['short_title'].replace(0, titleB)
-    
-    # Examine how many of each short_title there is
-    df['short_title'].value_counts()
-    
-    # Should the primary role actually be for the second role?
-    # The one that didn't have a unique identifier
-    if titleB_primary:
-        df['is_primary_role'] = 1 - df['is_primary_role']
-    
-    return df
-        
-        
 # The following two variables will be re-used in subsequent cell blocks
 titleA = "Data Scientist"
 titleB = "Analyst"
 
 # Use the above function to create a data frame of jobs
-jds = create_df_for_jds(jd_folder, titleA, 'cientist', titleB, False)
-
+jds = cld.create_corpus_df(
+        roles_folder = jd_folder, 
+        titleA = titleA, 
+        identifierA = 'Scientist', 
+        titleB = titleB,
+        titleB_primary = False
+        )
+        
 # Create a more concise dataframe with just two columns
-j = pd.DataFrame.copy(jds[['is_primary_role', 'description' ]])
+j = pd.DataFrame.copy(jds[['is_primary_role', 'description']])
 
 
 
