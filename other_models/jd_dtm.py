@@ -15,6 +15,7 @@ Do senior titles get grouped?
 import os
 import pandas as pd
 
+from numpy import count_nonzero
 from sklearn.feature_extraction import text 
 
 
@@ -114,7 +115,14 @@ vect.fit(X)
 X_dtm = vect.transform(X)
 
 
+
 # Convert the sparse DTM to a dense matrix
 a = X_dtm.todense()
+
+# Calculate the sparsity of the matrix
+sparsity = 1.0 - count_nonzero(a) / a.size
+
+
+
 b = pd.DataFrame(data=a, columns=sorted(vect.vocabulary_))
 b.to_csv("jd_dense_dtm.csv")
