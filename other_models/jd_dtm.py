@@ -62,10 +62,6 @@ j = pd.DataFrame.copy(jds[['is_primary_role', 'description']])
 # Export results into a csv
 j.to_csv('jd_corpus.csv')
 
-# Create a data frame where the index is set to the title column
-j_detail = pd.DataFrame.copy(jds)
-j_detail.set_index('title', inplace = True)
-
 # ======================================
 # ======= Document Term Matrix =========
 # ======================================
