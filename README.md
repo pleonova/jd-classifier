@@ -15,6 +15,28 @@ I was happy to see that the top terms that appeared for each role were in line w
 
 For a more detailed write up of the results, please see [my blog post](https://pleonova.github.io/jd-classification/).
  
+ 
+## Contents
+
+#### jd_classification.py
+- This is the main file where the model is built and tested as well as where the token exploration happens (work in progress: modularize this more, see Next Steps).
+
+#### clean_data.py
+- Will eventually contain all the functions that are used to clean and extract data from the original input files.
+
+#### requirements.txt
+- List of all the packages/libraries used in the jd_classification.py
+
+#### images (folder)
+- Contains all the chart outputs.
+
+#### other_models (folder)
+- Contains other models built of the same data
+
+#### jd_files* (folder)
+- This is the folder that contains all the JDs, currently this is on my hard drive. 
+
+ 
 ## Process
 
 #### Data Collection: 
@@ -22,7 +44,7 @@ For a more detailed write up of the results, please see [my blog post](https://p
 
 #### Data Preparation:
 - I stored all the job descriptions in one folder in the .docx format. Each file's name has the company name followed by the title of the role.
-- Function `create_df_for_jds()`: Loops through all files in the folder containing the job postings in order to create a dataframe with columns for the the full file name, description, simplified title and yes/no classifier for primary role.
+- Function `create_corpus_df()`: Loops through all files in the folder containing the job postings in order to create a dataframe with columns for the the full file name, description, simplified title and yes/no classifier for primary role.
 
 #### Feature Exploration/Engineering:
 - Function `years_of_experience()`: Extracts the number of years listed in the job requirements using regular expressions and creates an additional column in the JD dataframe. If a job has a range for years of experience, the difference between the lower and upper bound is added to a separate column.
