@@ -45,7 +45,9 @@ from sklearn.cross_validation import cross_val_score
 
 # Folder where job description files are saved
 jd_folder = '/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data School/JDs Training & Test Docx'
-github_image_folder = '/Users/Leonova/Repos/jd-classifier/Images/'
+github_image_folder = '/Users/Leonova/Repos/jd-classifier/images/'
+
+# 
 
 # =====================================================
 # ==================== Data Prep ======================
@@ -617,7 +619,7 @@ def extract_surrounding_text(word, context_length, df):
 
 
 # Find all the job postings that have the following word & surrounding characters
-con_df = extract_surrounding_text('statistics', 30, jds)
+con_df = extract_surrounding_text('python', 30, jds)
 # Examine the output
 con_df.head(10)
 
