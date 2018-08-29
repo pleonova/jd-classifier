@@ -1,0 +1,1071 @@
+,is_primary_role,description
+0,1,"Who We Are:
+Founded in 2005 within Take Two Interactive, 2K develops and publishes interactive entertainment for PC, console and mobile platforms. Our world-class team of engineers, developers, graphic artists and publishing professionals are stewards of a growing library of critically-acclaimed franchises such as Battleborn, BioShock, Borderlands, The Darkness, Mafia, NBA 2K, Sid Meier’s Civilization, WWE 2K, and XCOM.
+What We Need:
+2K has been a major console and PC game publisher for several console generations and is known for bringing amazing IP to the market. As our games get bigger and more complex, we are growing our analytics group. We’re looking for a skilled and passionate Data Scientist to work in the Analytics team, who will be primarily focusing on NBA 2K user data on console, PC and mobile and be responsible with crunching data, translating that information into digestible reports, setting up dashboards, building predictive models, and giving actionable data and insights to our development, sales and marketing teams.
+Job Responsibilities Will Include:
+Work closely with development teams to provide insights to understand the impact of product decisions on game quality, as the game moves through its development phases
+Analyze gameplay and economy telemetry data to understand how feature, content and balance adjustments are impacting overall player experience, before and after the product launches
+Analyze game and player data to understand the player behavior and enhance the quality of the player experience
+Test acquisition, engagement and monetization strategies around our live service offerings, find opportunities to drive player engagement and monetization
+Use predictive modeling to establish behavior patterns that assist with player churn prediction, spend propensity and lifetime value
+Establish and distribute regular performance reports and dashboards to finance, marketing and production
+Performs ad hoc analyses regularly for finance, marketing, production and operations
+Present findings taken from data analysis both in person and in presentation form for remote groups
+Who We Think Will Be A Great Fit:
+We’re looking for a senior analyst who is eager to mine data for insights, hypothesis driven and experienced with using data-driven techniques to test the hypotheses rigorously. The ideal candidate must be able to see the underlying story in the data and develop a compelling communication to executives. Being a solution oriented, creative problem solver and self-starter with passion and enthusiasm to drive the results for meaningful changes are also going to be very critical for this role.
+Minimum Requirements:
+B.A. or B.S. in Mathematics, Statistics, Economics, Computer Science, Data Science, Engineering Sciences (or in another quantitative discipline) – Master’s or PhD Degree is a big plus
+3+ years of experience in data mining & analytics with very large, complex and multi-dimensional data sets
+Experience with predictive modeling techniques and accomplished in use of one of the statistical software packages like R, SAS or Python machine learning modules
+Expert in SQL (experience with Vertica and/or Redshift is a big plus) and experience with big data technologies such as Hadoop, Hive, Pig or other NoSQL DBs
+Experience with data visualization tools, Tableau preferred
+Programming experience in one of the languages like Python, Perl, Ruby, C, C++, Java, etc.
+Excellent communication skills, with a proven track record of working across all levels of the organization – having the information is one thing, you must be able to disseminate and educate
+Video games industry experience and familiarity with NBA 2K franchise are strongly preferred
+"
+1,1,"Note: Due to volume of applications we receive, we kindly ask that you only apply to a maximum of one Data Scientist role from among those posted. This does not preclude you from being considered for multiple roles. Thank you.
+Airbnb has become a global platform that connects travelers and hosts from over 34,000 cities. As such, it has collected a diverse set of numerical, textual, visual, and unstructured data, which our Data Science team mines for insights that will propel our community and product forward.
+Here Are Some Examples Of Projects We Currently Need Help With
+We are looking for experienced Data Scientists to join our team and expand upon the work we have done.
+* Evolve our user lifetime value models and use them to direct growth marketing campaigns toward where they will have the maximum impact
+* Build statistical models to predict demand and supply of listings by geography
+* Work with our customer experience team to convert unstructured text to insights about where our product falls short, and then partner with engineers to make improvements
+* Work with our marketplace team to develop a new price recommendation algorithm for our host community
+* Develop machine learning models with our Trust and Safety team that can identify risky behavior before impacting our community
+* Improve the statistical methodology behind our experimentation platform to ensure that our understanding of product changes is rigorous and accurate
+We have a strong team of Data Scientists, our work is highly sought-after, and our impact on the business is tremendous. If you have a proven background in this field and are excited to help build Airbnb’s community, we want to hear from you.
+Some Examples Of Traits We Value
+* Ability to write clean and concise code, especially in R or Python
+* 3+ years in industry experience and a Master's degree in a quantitative field, PhD is a plus
+* Solid understanding of statistics
+* Keen eye for detail and thoughtful investigation of data before relying upon it
+* Intuition for data science best practices, stemming from proven experience
+* Steadfast focus on creating impactful change
+Benefits
+* Stock
+* $2,000 yearly employee travel coupon
+* Competitive salary
+* Paid time off
+* Medical, dental, & vision insurance
+* Life & disability coverage
+* 401K
+* Flexbile Spending Accounts
+* Apple equipment
+* Daily breakfast, lunch, and dinner
+"
+2,1,"Job description
+The Trips team has an ambitious goal of transforming Airbnb from an accommodations business to an end to end travel platform, through expanding and growing new product offerings including Experiences and Restaurants. We are reimagining travel by immersing travelers in unique and authentic experiences around the world. The Trips Platform team plays a crucial role in realizing this mission by building the end to end trip product from inspiration, search, and planning of a trip.
+
+Here Are Some Examples Of Projects
+We are looking for experienced Data Scientists to join our team and expand upon the work we have done.
+Define metrics to accurately measure our progress toward our mission
+Design experimentation strategy to ensure that our understanding of product changes is rigorous and accurate
+Identify and prioritize opportunities to improve search experience
+
+We have a strong team of Data Scientists, our work is highly sought-after, and our impact on the business is tremendous. If you have a proven background in this field and are excited to help build Airbnb’s community, we would be excited to hear from you.
+
+The Traits We Value
+3+ years in industry, preferably on product facing teams
+Solid understanding of statistics and online experiment design
+Strong analytical skills with experiences in defining both long term and operational metrics and generating actionable data insights to drive product direction.
+Ability to write clean and concise code, especially in SQL, R or Python
+Strong communication skills
+
+Benefits
+Stock
+$2,000 yearly employee travel coupon
+Competitive salary
+Paid time off
+Medical, dental, & vision insurance
+Life & disability coverage
+401K
+Flexible Spending Accounts
+Apple equipment
+Daily breakfast, lunch, and dinner
+"
+3,1,"Alexa is the groundbreaking cloud-based intelligent agent that powers Echo and other devices designed around your voice. Our team is creating the science and technology behind Alexa. We’re working hard, having fun, and making history. Come join our team! You will have an enormous opportunity to impact the customer experience, design, architecture, and implementation of a cutting edge product used every day by people you know.
+As a Data Scientist with the Alexa Conversational AI team, you will
+We’re looking for a passionate and talented Data Scientist to help make data-driven improvements to our Automatic Speech Recognition (ASR), Natural Language Understanding (NLU), and Dialog models in order to provide the best-possible experience for our customers.
+* Work with large amounts of real-world conversational data
+* Ensure data quality throughout all stages of acquisition and processing, including data collection, ground truth generation, normalization and transformation
+* Build and release models that elevate the customer experience and track impact over time
+* Collaborate with colleagues from science, engineering and business backgrounds
+* Present proposals and results in a clear manner backed by data and coupled with actionable conclusions
+Basic Qualifications
+* Master’s or PhD in a relevant field
+* 3-5 years experience with various machine learning/statistical modeling data analysis tools and techniques, and parameters that affect their performance
+* Experience in Python, Perl, or another scripting language
+* Passion for data and numbers
+Preferred Qualifications
+* 5-7 years experience with various machine learning/statistical modeling data analysis tools and techniques, and parameters that affect their performance
+* Track record of diving into data to discover hidden patterns and of conducting error/deviation analysis
+* Ability to develop experimental and analytic plans for data modeling processes, use of strong baselines, ability to accurately determine cause and effect relations
+* Understanding of relevant statistical measures such as confidence intervals, significance of error measurements, development and evaluation data sets, etc.
+* Ability to think creatively and solve problems
+* Strong attention to detail
+* Exceptional level of organization
+* Comfortable working in a fast paced, highly collaborative, dynamic work environment
+Amazon.com is an Equal Opportunity-Affirmative Action Employer – Minority / Female / Disability / Veteran / Gender Identity / Sexual Orientation
+Apply for this job online Apply
+Share
+Email this job to a friend Refer
+Company
+Amazon Corporate LLC
+Recruiting Team
+*  Job ID
+513814
+"
+4,0,"Ancestry seeks a Product Analyst (Data Science) to work in an exciting and dynamic area, with huge opportunity for learning. If you love diving into massive datasets but also want the opportunity to shape the vision and strategic role of Product Analytics then this may be the role for you. Working closely with members of Product, Data Scientist and Engineering teams, you will define and report on key metrics, analyze customer behaviors/data, optimize our products by experimentation and content and build tools/service to improve Analytics productivity.
+What You Will Do
+* As a key partner on the Product Management team, you will participate annual product planning, new product design, execution, review and continuous product feature improvement
+* Implement and analyze A/B or Multi-Variate Tests to measure the impact of product decisions and changes
+* Collaborate with business partners to identify critical business problems/key knowledge and translate them into technical analyses and deliver actionable insights
+* Create dashboards, reports, and analyses that explain what happened and why
+* Identify and understand various data sources; build tools and services to improve analysis and experimentation throughput, and work with Data Warehouse team to make online and offline data cross platforms available.
+?
+?
+Qualifications
+Who you are
+* 1+ years of experience in each of following
+o using statistical inference on daily basis
+o using/implementing data tracking for user behavior
+o analyzing very large datasets with SQL (Redshift, Teradata, Oracle, or MySQL) and R, SAS or other statistical package
+* Undergraduate degree a must. Masters/PhD in Statistics, Operation Research, Applied Mathematics, Economics, Computer Science, or a quantitative discipline preferred
+* Technical requirements
+o Being able to write Python or R programming to run analysis on big Dataset is PLUS
+o Advanced proficiency in Excel (pivot tables, advanced formulas, etc)
+* Strong research and analytical mindset and extremely detail-oriented
+* Team player with positive and “can-do” altitude, excellent interpersonal skills, inquisitive, self-starter, energetic and striving in a fast-moving environment.
+* Strong communication skills, written and verbal; ability to present data and its implications in a clear, concise manner; balanced technical and business perspectives.
+* Ability to deal with change and ambiguity, resilient
+Additional Information
+We’re a cutting-edge tech company with a very human mission—to help every person discover, preserve, and share the story of what led to them. Combining the rich information in family trees and historical records with the genetic details revealed in DNA, we create unique experiences that give people a new understanding of their lives, because connecting all the pieces of our family story can give us the deepest sense of who we are.
+For more information on what we do and why you would want to work at Ancestry, visit our careers pagewww.workforancestry.com
+Ancestry is not accepting unsolicited assistance from search firms for this employment opportunity. All resumes submitted by search firms to any employee at Ancestry via-email, the Internet or in any form and/or method without a valid written search agreement in place for this position will be deemed the sole property of Ancestry. No fee will be paid in the event the candidate is hired by Ancestry as a result of the referral or through other means .
+Qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, sexual orientation, gender identity, disability or protected veteran status.
+IND2
+Job Location
+"
+5,0,"As our Data Analyst for Media you will be the visionary responsible for collecting and analyzing media data globally and presenting key findings including social sentiment and results from paid and earned media. You will identify key insights and potential factors affecting campaign flighting, messaging and comprehension. You love to aggregate complicated data and get excited about identifying key insights, using them to build actionable future recommendations.
+Description
+You will be joining a team of forward-thinking Media experts within Marcom who collaborate closely with extraordinary creative talent to launch Apple products, craft new customer experiences, and tackle complex marketing challenges. Using an objective and data-focused approach, we connect the Apple brand with current and future customers all over the world.
+Education Details
+Bachelor's Degree preferred
+Key Qualifications
+Recommend data-informed creative choices (messaging analysis, features, timing, targets, investment levels, R&F) to feed into briefs and overall communications planning
+You will develop end-to-end reporting to define how media drives consumer behavior by gathering relevant data across all of Apple, including groups outside of Marcom (Retail, Apple Online Store, App Store, Product teams)
+You will build relationships with our retail teams and keep updated on their attribution modeling to integrate those findings into your reporting and recommendations
+Work closely with our media agency to analyze front-end media metrics including standard measurement as well as incremental online and cross-channel measurement tools (i.e Nielsen, Online ratings, TAR)
+You will develop a dashboard that includes defined key performance indicators (KPIs)
+Monitor industry statistics to help define benchmarks and measure performance
+Prepare reports of findings, illustrating data graphically and translating complex findings into executive recaps
+Manage and analyze WW YouTube channel data and define trends and best practices
+Develop and implement procedures for integrating findings into future campaigns
+Work with agency and outside groups (Apple Care, PR) to implement and analyze social media listening/sentiment tools
+You will have 5-7 yrs of experience in a performance-based analytics role
+You bring a strong working knowledge of analytics and social listening tools like Tableau and Radian6
+Additional Requirements
+Creative Advertising or Design Agency experience preferred.
+Samples of creative briefs or case study samples required.
+Apple is an Equal Opportunity Employer that is committed to inclusion and diversity. We also take affirmative action to offer employment and advancement opportunities to all applicants, including minorities, women, protected veterans, and individuals with disabilities. Apple will not discriminate or retaliate against applicants who inquire about, disclose, or discuss their compensation or that of other applicants.
+"
+6,1,"Independently named by FastCompany as one of the world’s most innovative companies in data science, Arimo’s Behavioral AI software is aimed at delivering predictive insights in commercial IoT applications. 
+
+Arimo's capabilities harness the behavior of machines, devices, customers, and other entities to provide the most accurate predictions utilizing Deep Learning. With Arimo Behavioral AI™, leading companies are creating competitive advantage through new predictive insights, and delivering new services to their customers. 
+
+Our strong team includes executives with deep product and engineering experience. They have held senior positions at Google, Yahoo, Amazon, SAP, Microsoft, and VMware. Team members hold advanced degrees in computer science and business from leading universities. Arimo is funded by Andreessen Horowitz, Lightspeed Ventures, and Bloomberg Beta. To learn more, visit us at www.arimo.com 
+
+Arimo is growing rapidly and now offering a position for Data Scientist. Passionate about digging into massive data sets and extracting data-driven insights to address complex business problems through analysis and visualization? Join us and become a part of this exciting journey! 
+
+Responsibilities
+Extract, analyze, and apply data-mining and machine learning techniques to large structured and unstructured datasets
+Design and analyze experiments to test new features & products
+Develop new algorithms and models for product improvement
+Work with product managers, designers, and engineers to build new features and products
+Required Skills and Qualifications
+2+ years of experience working with large amounts of real data
+Expertise in at least one statistical software package, preferably R
+Experience with visualization tools such as d3, matplotlib, ggplot
+Experience with ETL & ML tools in R, Python, and Java such as scikit-learn, pandas, matplotlib, statsmodel, iPython, Weka
+Proficiency in SQL
+Advanced skills in a scripting language such as Python
+Experience in Hadoop/Spark and/or other MapReduce paradigms is a plus
+Experience in Deep Learning is a plus
+Ability to translate business objectives into actionable analyses
+Ability to communicate findings clearly to both technical and non-technical audiences
+Top-down thinker, excellent communicator, and great problem solver. Must be an active team player
+Open-minded and excited to learn new things. Have strong opinions but willing to change with new data
+Ms/Ph.D. in a CS or related discipline with domain expertise in Machine Learning, Statistics, Information Retrieval, or Graph Analysis
+Arimo offers competitive compensation packages commensurate with your experience. Offer includes full benefits, company stock options, continual career & compensation growth, and many other perks.
+"
+7,0,"The Sr. Business Intelligence and Data Analyst will work closely with Company’s Engineering division, and other functions as needed. Using your knowledge of BI technologies, you will build reports and Dashboards /KPI's. The candidate will ensure consistent use of Company metrics, advocate best practices for reporting, and promote available reporting technologies. This job requires a combination of analytical, database , organizational and interpersonal skills. 
+
+The job also requires work with lot of confidential financial and customer data. 
+
+7+ years of experience in business intelligence tools with at least 5 years of experience with BI tools like Sisense, Qlikview, Tableau, Business Objects, Spotfire.
+Study on data visualization best practices. Designing Dashboard and KPI’s and operational Reports
+Strong SQL skills, including data modeling and data warehousing skills.
+Proficiency with scripting languages a plus.
+Strong situation analysis and decision-making abilities, strong analytical skills. Strong focus on quality.
+Sound understanding of BI Best Practices/Methodologies
+Experience in SQL with a common RDBMS like SQL Server, Oracle, MySql.
+Advance knowledge of Microsoft Excel, or other data management tools with prior data mining experience.
+Experience with integrating/blending data sets (data import/export, data cleansing/QA).
+Understand how input data translate to business performance measurement and ensure that data quality standards are met to support accurate measurement.
+Research industry best practices, experiment with new technologies, and create a roadmap of business intelligence growth.
+Assess and continuously improve the reporting processes, including streamlining queries and optimizing the utilization of resources.
+Agile/Scrum team environment experience.
+Bachelors degree in computer science
+Experience with Sisense and Tableau reporting tool, RDBMS (Teradata), Big Data Technologies (Hadoop, Hive) is preferred.
+Experience with Python and Javascript.
+Experience performing ETL/data integration tools like Informatica.
+Excellent communication skills, both written and verbal.
+Ability to manage multiple projects, meet deadlines and adjust priorities
+Proven ability to multi-task, prioritize, and work under deadlines.
+Strong customer-focus.
+Equal Employment Opportunity. It is Calix’s policy to provide equal employment opportunity for all applicants and employees. Calix employment-related decisions, including recruitment, hiring, training, compensation, benefits, and promotion are based solely on an individual’s qualifications and ability to accomplish assigned job functions and legitimate business needs. Calix does not unlawfully discriminate on the basis of race, religion, color, national origin or ancestry, sex (including pregnancy, breastfeeding and medical conditions related to pregnancy and breastfeeding), age (40 and over), sexual orientation, gender identity or expression, pregnancy, medical condition, genetic characteristic or information, marital status (including registered domestic partners), veteran status, physical or mental disability, status as a victim of domestic violence, sexual assault, or stalking, or any other legally protected criteria.
+"
+8,0,"As Senior Business Analyst, you will report to the Director of Data Analytics and be responsible for creating key performance reports, deep analysis, and insights. You will work with the Product and Marketing teams who will depend on you to detect trends and identify opportunities. As a result of your analysis, you will provide actionable insights to marketing/product leaders so they can make informed data driven decisions to drive the business.
+Specific responsibilities:
+Conduct the standard suite of product analyses to uncover insights about our product and users: cohort analysis, funnel analysis, user segmentation, etc.
+Analyze marketing and customer acquisition data and provide valuable, data-centric insights, and solutions
+Provide actionable results that the business can leverage to set strategic direction and make day-to-day decisions
+Develop standardized dashboards and ad hoc reports to inform business decisions, with an emphasis on automation and scalability
+Design and analyze A/B tests to drive KPI improvements
+Apply expertise in quantitative analysis and data visualization to tell the story behind the numbers and provide recommendations to leadership
+Partner with Engineering to optimize data tracking/quality and drive data warehouse improvements
+Qualifications for success:
+Bachelor's degree in Business, Marketing, Statistics, Mathematics or related quantitative field
+4+ years of business focused analysis experience in a Data Analyst or Business Intelligence focused role
+Strong SQL and Excel skills with at least a working knowledge of R, Python, or other scripting language preferred
+Experience developing and maintaining reports in Tableau or other data visualization tool
+Experience analyzing A/B and multivariate results for campaign and engagement performance
+Experience with tracking and analytics tools such as Google Analytics, Google Tag Manager, Mixpanel, Optimizely, and Tableau strongly preferred
+Comfortable with large data sets and interest in building data models for consumer behavior and business metrics
+Strong analytical, organizational and interpersonal skills
+Effective communication skills to present information to technical and non-technical audience
+Highly motivated self-starter with the ability to work efficiently with minimal supervision
+Knowledge of and curiosity to stay current on industry analytical trends
+Seniority Level
+Mid-Senior level
+Industry
+Financial Services
+ 
+Computer Software
+Employment Type
+Full-time
+Job Functions
+Finance
+ 
+Analyst
+"
+9,0,"Chase is undertaking an aggressive digital transformation agenda, which builds on the success of the current mobile and online service offerings. Chase is investing in innovative ways to deepen customer engagement and profitability through the use of digital channels. The ambition is to position Chase as the undisputed leader in digital financial services and payments and to enable Chase to deliver the highly personalized, real time experiences that customers increasingly expect.
+Digital Analytics is tasked with measuring and analyzing the current customer experience when using the bank’s web and mobile products and to provide actionable recommendations to enhance the consumer experience in order to build long term, profitable customer relationships.
+This Data Analyst role will be responsible for delivering against the Digital Analytics agenda and working with partners in Digital and across the Consumer Bank. Key constituents will include Digital Management, Product Management, Customer Experience Design, the various consumer lines of business, risk, compliance, and controls.
+As a Data Analyst, you will work as a member of a cross-functional team to improve the online and mobile experience for our customers. You will be responsible for building relationships with Product partners and delivering actionable Business Intelligence in clear and compelling terms. You’ll have a passion for data visualization and deep analytical understanding.
+Responsibilities include:
+Work with partners across Digital functions and LOB’s to provide data driven insights in support Digital strategic direction and growth
+Provide consultative support for Digital Product partners driven by fact-based findings
+Provide analysis and associated data visualization and story-telling
+Focus and prioritize the analytics agenda to align with overall strategy and business value
+Collaborate within Digital Analytics to enhance the quality and value of team deliverables
+Work with Data Services and Core Analytics partners to enhance overall performance of Digital Analytics team
+Qualifications:
+3+ years relevant experience analyzing online and mobile customer experiences
+Structured thinker with passion for analyzing results and digging deeper
+Hands on experience with behavioral and transactional analytics tools and techniques
+Experience working with Business Intelligence (BI) platforms to deliver reports and scorecards
+Experience with SAS, SQL required
+Experience with Tableau and/or Adobe Data Workbench preferred
+Ability to communicate effectively with executives, business partners, and technical resources in analytics and data management
+An understanding of social media trends and changes in the digital products/services space
+Demonstrated ability to define business KPIs and establish measurement frameworks
+Ability and desire to work in a start-up paced environment and culture
+Good to have Hadoop and Hive experience.
+"
+10,0,"Who You Are 
+
+Are you ready to be part of Global Sales and Customer Success data science team? Our data science team is an incubation hub for a range of initiatives that are changing the sales, partner, and customer experience. The team has been recognized for innovation both internally and through external industry awards. 
+
+Who You'll Work With 
+
+We are seeking a creative and experienced Data Visualization expert to build our team’s visual and interactive portfolio from the ground up. As our team’s first data visualization hire, we expect you to have experience delivering at each stage of visualization to take a project from pitch to design to user interaction. This role will work with data from within our team and around Cisco. 
+
+What You'll Do 
+
+Our team operates like a startup, so the ability to produce excellent work on a short deadline, learn quickly, and self-motivate are imperative. Because we trust our talent, we expect you to be able to produce work with minimal direction and supervision. 
+
+Must have: 
+
+· Degree in Computer Science, Information Sciences, Human-Computer Interaction, or related 
+
+· Ability to create tools for visualizing and interacting with insights derived from predictive, statistical models. 
+
+· Experience in a compiled language (Java, C++, etc.) 
+
+· Expertise with HTML/CSS/Javascript, D3, Angular.js 
+
+· Experience using design software 
+
+· Experience with cartography and mapping skills 
+
+· Meticulous attention to detail 
+
+Ideally: 
+
+· Experience working on multidisciplinary teams 
+
+· Compelling and interactive online portfolio 
+
+· Strong communication skills with both technical and non-technical audiences 
+
+· Experience in data/visual journalism 
+
+· Experience with statistical programming languages 
+
+Why Cisco 
+
+We connect everything: people, processes, data, and things. We innovate everywhere, taking bold risks to shape the technologies that give us smart cities, connected cars, and handheld hospitals. And we do it in style with unique personalities who aren’t afraid to change the way the world works, lives, plays and learns. 
+
+We are thought leaders, tech geeks, pop culture aficionados, and we even have a few purple haired rock stars. We celebrate the creativity and diversity that fuels our innovation. We are dreamers and we are doers. 
+
+We Are Cisco. 
+
+Who You'll Work With 
+
+Digitization, data science, and automation are transforming every business. The Digital Experience and Analytics organization is playing a key role in transforming the sales, partner, and customer experience across Cisco. As part of the Customer Success and Sales function, this group is delivering upon a multi-year vision that digitizes the way Cisco engages with customers and leverages data science to intelligently drive action in an increasingly automated manner. This new organization is a catalyst for change that impacts all parts of Cisco. The Customer Success data science team is an incubation hub for a range of initiatives that are changing the sales, partner, and customer experience. The team has been recognized for innovation both internally and through external industry awards. We're looking for someone who thrives in a fast-paced environment in which they have significant responsibility and autonomy for delivering results and who gets excited about the prospect of significant learning and growth. 
+
+What You'll Do 
+
+As a member of this dynamic and fast-paced team, you will validate, clean, transform and model high quality data with a goal to discover useful information and insights, suggest conclusions, and support decision making a with focus on the business outcomes. Identify data gaps, prepare immediate resolution plans and document/drive data requirements. Specific responsibilities include: * Be a Data Subject Matter expert for Global Customer Success and Virtual Sales success * Understand data requirements and identify the data sources in partnership with business analysts * Interpret data, Analyze, Validate and assure good data quality, provide ongoing reports * Identify, analyze, and interpret trends or patterns in complex data sets
+Document the data findings, Define the plan to improve the data quality (as-required) * Document the impact of data quality and support Business Analyst to drive the roadmap * Create and manage data dictionary and data lineage diagrams
+Perform Impact assessment and deep dive analysis in collaboration with stakeholders to ensure data integrity, consistency, usability and completeness
+Gather and document key learnings and drive future enhancement and optimization
+Data cleanup and transformation to support the business process as required
+Discover basic data insights with data models
+Who You Are 
+
+Minimum Qualifications
+Bachelor's degree or equivalent
+2+ years data analysis experience in Big Data
+Strong data analytical skills -- ability to identify and analyze complex patterns, data integration and data quality
+Ability to communicate data issues clearly to broad audiences * Team player with positive can-do attitude; energetic and proactive
+Work experience in business reporting / business intelligence environments Desired Skills * Problem solver with strong business acumen and deep experience in data analysis over Big Data (large datasets in Hadoop) * Critical thinking and ability to drive conclusions based on data findings * Written and verbal communication, including technical writing skills * Proficient in SQL, OLAP, MQE, Data Reports, Semantic and text analytics * Strong Excel skills * Basic statistics knowledge (variation and average) * Data Visualization - Graphs, charts, dashboards * Awareness of scripting language like Python * Awareness of basic data modelling concepts Why Cisco We connect everything: people, processes, data, and things. We innovate everywhere, taking bold risks to shape the technologies that give us smart cities, connected cars, and handheld hospitals. And we do it in style with unique personalities who aren't afraid to change the way the world works, lives, plays and learns. We are thought leaders, tech geeks, pop culture aficionados, and we even have a few purple haired rock stars. We celebrate the creativity and diversity that fuels our innovation. We are dreamers and we are doers. We Are Cisco.
+"
+11,1,"Looking for a company that inspires passion, courage and imagination, where you can be part of the team shaping the future of global commerce? Want to shape how millions of people buy, sell, connect, and share around the world? If you’re interested in joining a purpose driven community that is dedicated to creating an ambitious and inclusive workplace, join eBay – a company you can be proud to be a part of. 
+
+We are looking to hire an analytics & insights expert to partner with the shopping experience product and Engineering teams. Ebay is undergoing a radical platform transformation – converting un-structured data into structured, and building a unique shopping experience on top of that – to help our customers browse and discover the breath of ebay’s inventory selection. This is a complex undertaking with interesting and challenging problems. 
+
+This leader will have the unique opportunity to influence decision making of the Shopping experience product roadmap with their insights and thought leadership. To be successful in this role: 
+The leader would have to strike a balance between being able to guide and influence the thinking and vision of the overall team while at the same time be extremely comfortable doing actual hands-on analyses using tools & packages such as SQL, R, Python etc. 
+
+This leader needs to possess not only super strong technical skills to turn big data in Teradata and Hadoop into actionable insights, but also big picture thinking to connect the dots and evaluate how the insights impact eBay’s ecosystem. 
+
+In addition to delivering insights on existing Product & Tech initiatives, successful leaders will come up with innovative product growth opportunities based on insights and create momentum behind them by bringing along senior leaders in the company. 
+Strong analytical acumen with thought leadership and critical thinking. 
+Proven track record of turning insights into product growth opportunities in prior roles with increasing scope and responsibilities. Preferably in a leading technology companies with 5 to 7 years of experience.
+Great articulation skills - ability to explain complex analyses and insights into simple terms
+Strong background in e-commerce.
+Strong technical skills to turn the big data in Teradata and Hadoop into actionable insights. Hands-on ability in using SQL, R, Python etc.
+Strong quantitative background with Masters degree in Computer Science, Math, Physics, Engineering. PhD degrees preferred.
+Good experience with both descriptive and inferential statistics – ability to build basic prototype models.
+Experience with site experimentation (A/B testing) is a plus.
+eBay 
+
+is a Subsidiary of eBay. 
+
+This website uses cookies to enhance your experience. By continuing to browse the site, you agree to our use of cookies 
+
+View our privacy policy 
+
+View our accessibility info
+"
+12,0,"We are looking for a Data Analyst to join our Data Science team. The ideal candidate would be an energetic, results focused self-starter with excellent analytical skills and an ability to decompose ambiguous questions into discrete data problems and answer with clear, actionable insights. 
+
+Key Responsibilities
+Work with stakeholders in Growth, Marketing and Product to set and track meaningful KPIs
+Work with Product Managers on exploratory analyses to find actionable info to drive growth
+Develop standardized dashboards and ad hoc reports to inform decisions
+Brainstorm new ideas and design experiments, test them, and analyze results
+Requirements:
+2+ years experience in product analytics, business intelligence, data analysis, data science, or similar area
+Bachelors or Masters in Statistics, Math, Computer Science or other quantitative field (or equivalent experience)
+Strong SQL skills are a must. Experience extracting, manipulating, and analyzing large data sets using SQL
+Understanding of best practices in data visualization
+Experience with data visualization and dashboard tools such as Tableau
+Extremely attentive to detail, data accuracy, and quality of output
+Experience with big data frameworks preferred
+Bonus: Comfortable with statistics and common pitfalls in experimental design and analysis
+Bonus: Some experience in a scripting language like Python a plus
+NOTE: Please complete the Data Analyst Screening Questions after your submission. The application will not be considered if the questionnaire is not completed. 
+https://docs.google.com/forms/d/e/1FAIpQLSdPzuQxjSTdqh5Ba-EQDn6gWyNqoBfYUxVRdzo9J-qiULBL_Q/viewform?c=0&w=1 
+
+A few perks and benefits to whet your appetite:
+Market competitive compensation package including stock options
+Medical, dental & vision insurance coverage for employees
+Coverage for disability, life and AD&D insurance
+Domestic partner coverage
+401(K) plan
+Flexible time off
+10 paid holidays
+Free catered lunch, snacks and drinks
+Paid Caltrain GoPass
+Paid gym membership
+Onsite weekly massages available at a discounted rate
+Employee Referral Program
+Company sponsored speaker series: “Learning about Learning”
+Happy hours, company outings and more
+Open floor plan office with great views
+The position is located in San Mateo, CA, right off the 101 freeway and the San Mateo Bridge. 
+
+How Edmodo is making a difference. 
+
+Our mission is to connect all learners to the people and resources needed to achieve their full potential. We are the world's leading global education network that provides communication, collaboration, and coaching tools for all members of the school community. We were founded in 2008 and currently have over 80 million members across 350,000+ schools in 150 countries. 
+
+The investors backing Edmodo are some of the best-recognized firms in the world, including Benchmark Capital, Greylock Ventures, Index Ventures, Union Square Ventures, Learn Capital and our Chairman is Reid Hoffman, founder of LinkedIn. 
+
+So join the team that is changing how teachers and students learn - change lives, build your career and rack up the karma. 
+
+Edmodo is an equal opportunity employer and does not unlawfully discriminate in employment. Equal access to employment, services, and programs is available to all persons. Those applicants requiring reasonable accommodation to the application and/or interview process should notify a representative of the organization. 
+
+Please note: Though submitting a resume to Edmodo implies that you are interested in a position(s), it does not imply that you are an applicant. You are not considered an applicant until you have been contacted directly by a Human Resources representative requesting that you begin the designated application process, which may involve phone and/or in-person interview(s), job-related testing, and background checking.
+"
+13,0,"Note: By applying to this position your application is automatically submitted to the following locations: Kirkland, WA, USA; Seattle, WA, USA; Mountain View, CA, USA; San Bruno, CA, USA
+Help serve Google's worldwide user base of more than a billion people. Business Analysts provide quantitative support, market understanding and a strategic perspective to our partners throughout the organization. As a data-loving member of the team, you serve as an analytics expert for your partners, using numbers to help them make better decisions. You weave stories with meaningful insight from data. You make critical recommendations for your fellow Googlers in Engineering and Product Management. As a self-starter, you relish tallying up the numbers one minute and communicating your findings to a team leader the next. 
+
+You can see different angles of a product or business opportunity, and you know how to connect the dots and interact with people in various roles and functions. You have substantial experience with analytical tools and techniques, and bring a solid skill-set in analyzing data and communicating recommendations. You will deepen your skill-set by working with analytical thought leaders across the company. 
+
+Data Scientists are changing the world one technological achievement after another. 
+
+Experimentation is at the core of what you do. In this role, you will work to effectively turn business questions into data analysis, and provide meaningful recommendations on strategy. This is a unique hybrid role that will focus on your knowledge of data infrastructure and your ability to drive insights. 
+
+Google is and always will be an engineering company. We hire people with a broad set of technical skills who are ready to take on some of technology's greatest challenges and make an impact on millions, if not billions, of users. At Google, engineers not only revolutionize search, they routinely work on massive scalability and storage solutions, large-scale applications and entirely new platforms for developers around the world. From AdWords to Chrome, Android to YouTube, Social to Local, Google engineers are changing the world one technological achievement after another.
+Responsibilities
+Conduct data analysis to make business recommendations (cost-benefit, invest-divest, forecasting, impact analysis).
+Deliver effective presentations of findings and recommendations to multiple levels of stakeholders, creating visual displays of quantitative information.
+Develop and automate reports, iteratively build and prototype dashboards to provide insights at scale, solving for analytical needs.
+Collaborate with cross-functional stakeholders to understand their business needs, formulate and complete end-to-end analysis that includes data gathering, analysis, ongoing scaled deliverables and presentations.
+Help Google to focus on key decisions to improve products and services.
+
+Qualifications
+Minimum qualifications:
+BA/BS degree or equivalent practical experience.
+3 years of experience working with statistical packages (e.g. R, SAS, Stata, MATLAB, etc.)
+Experience with articulating product questions, pulling data from datasets (SQL) and using statistics to arrive at an answer.
+Preferred qualifications:
+BA/BS or Master's degree with emphasis on coursework of a quantitative nature (e.g., Statistics, Computer Science, Engineering, Mathematics, Data Sciences)
+Experience in scripting with SQL, extracting large sets of data, and design of ETL flows
+Work experience in an inter-disciplinary/cross-functional field.
+Deep interest and aptitude in data, metrics, analysis and trends and applied knowledge of measurement, statistics and program evaluation.
+Distinctive problem solving skills and impeccable business judgment.
+Capable of translating analysis results into business recommendations. Strong written and verbal communication skills.
+At Google, we don’t just accept difference - we celebrate it, we support it, and we thrive on it for the benefit of our employees, our products and our community. Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. If you have a disability or special need that requires accommodation, please let us know.
+"
+14,0,"Are you looking to work in a dynamic environment where you will have an immediate impact? Create data-driven insights for a company reinventing the healthcare space. Join a growing team looking to build out their business analytics department with both junior and senior level hires. Be able to shape the analytics strategy of the company and be at the forefront of a healthcare revolution. They are a data-driven organization, using analytics and insights to drive healthcare into the future.
+The Company:
+An innovator in the healthcare space. They are growing rapidly and value the insights data brings. They are looking to expand the data analytics functions as the business grows. You will be a part of a vibrant team diving into all sorts of customer data to help guide the direction of the business.
+The Role:
+Dive into the data and make sense of complicated and untouched data sets (also means you have a huge impact!)
+Work with other data-driven teams to drive insights.
+Cross-functional role with exposure to both the product and operations teams.
+Work in Excel, SQL, and Python to pull, clean, analyze and interpret data
+Create dashboards and reports to automate insights.
+Uncover risks and opportunities for the business through data analysis
+Develop and iterate on KPIs to create a more effective and enjoyable user experience.
+Your Skills:
+Background in probability and statistics
+Excel wizard, you are comfortable doing complex analyses in excel
+Some working experience with SQL
+Cross-functional and collaborative
+Team player excited to help your peers with their projects.
+Comfortable working autonomously
+Bonus Points:
+Exposure to Python (either self-taught or on the job)
+Experience in healthcare or medical field
+Benefits:
+Competitive Salary + bonus and pre-IPO stock incentives, downtown SF office
+How to apply:
+Please register your interest by sending your CV to Sonia Manssen via the Apply link on this page.
+Keywords:
+| data visualization | consumer insights | marketing insights | user insights | healthcare| python | SQL | technology |reporting | analytics
+"
+15,1,"Are you excited by an opportunity to leverage huge amounts of data and your skills to solve a fundamental need of all human beings? If so, we have a once in a lifetime opportunity for you to use invaluable health-related data, connect the dots, and help us save lives every day. HealthTap is bringing together the best talent to build a best in class data team in digital health. 
+
+Right now, we're looking for a world leading Senior Data Scientist to bring virtual care to billions of people globally safely and securely. 
+HealthTap, a World Economic Forum Technology Pioneer, is the world’s first Global Health Practice delivering immediate, world-class healthcare 24/7 from query-to-cure. Through video, voice, and text chat on any mobile device or personal computer, we connect hundreds of millions of people in 174 countries with the most trusted and compassionate health advice from a network of more than 107,000 top doctors. 
+
+How does that work? 
+You can search the world's largest library (more than 5.7 billion answers served) of peer-reviewed doctor knowledge for any health topic 
+Or ask help from Dr. A.I, our virtual “physician” who translates your symptoms into personalized, doctor-recommended insights and best course of action—trained by HealthTap’s doctor network 
+And if needed, connect with a doctor for a live virtual consult through voice, video, or text—and get prescriptions, labs tests, and referrals as needed. HealthTap’s proprietary, robust, and secure Health Operating System (HOPES™) and proprietary triaging technology, powered by Artificial Intelligence, enable hospital systems, insurance companies, employers, and governments worldwide to deliver the right care at the right time at the right cost. We generate significant revenue and are funded by some of the world's most reputable investors. Just like the quality of the services we provide, security matters to us most! HealthTap is, therefore, HIPAA-compliant and SOC 2 Type II-certified. 
+
+What’s the opportunity? 
+As a senior member of the data team, you'll have resources, autonomy, and the support of other A-players to drive detection, prevention, and analysis of security threats of the HOPES™ platform and the millions of active patients and doctors on it. 
+
+Examples of data projects you could work on: 
+
+Realize the dreams of Dr A.I., our artificial intelligence powered virtual physician, by enhancing the machine learning model 
+Mine our knowledge base of more than 5.5 billion doctor answers served and improve the lives of millions of people 
+Implement and own deep analysis of very large datasets 
+Real-time trending of health-related issues 
+
+Need to have 
+
+You’re passionate about making the world a happier, healthier place 
+You have a BS/MS/PhD in quantitative discipline (applied mathematics, statistics, CS, OR, or related field)
+You have 3+ years of experience using quantitative approaches to solve challenging and meaningful analytical problems (or equivalent) 
+You are proficient in programming and the use of analytic tools to perform rapid design, prototyping, analysis, simulation of, and experimentation with, advanced algorithms and technologies such as Python, R, Java, SQL, Matlab, Mathematica 
+You have solid grounding in applied mathematics and statistics including expertise in Bayesian Modeling, Multivariate Regression, Logistic Regression, Machine Learning, Cluster Analysis, Decision Analysis, Time-series Analysis and Forecasting, Factor Analysis, Structural Equation Modeling, Item Response Theory, Markov chains, Data Visualization (ggplot2/Shiny/matplotlib) 
+You have real-world experience working with massive amount of data using big data tools such as HIve, Pig, Impala, Spark Streaming/SQL, Presto, etc. 
+You have worked with large scale data platforms such as Hadoop, Spark, Redshift, NoSQL (DynamoDB/Cassandra/MongoDB), etc. 
+You don’t stop until the problem is solved 
+You like extreme ownership 
+
+Nice to have 
+You are familiar with AWS 
+You have a working knowledge of Map-Reduce, ETL, Tableau 
+An entrepreneurial background is a plus 
+Working experience in a smaller hyper-growth startup is a plus 
+
+Perks 
+Protect people and save lives 
+Enjoy autonomy— the security team will directly report to the CTO of HealthTap 
+Work in either of our locations: Palo Alto’s University Avenue office (steps from Caltrain), or in San Francisco 
+Get served catered lunch, dinners, and healthy snacks 
+Take advantage of subsidized gym membership 
+Relax with in-office massages 
+Get covered by full medical, dental, and vision insurance 
+Enjoy competitive compensation and equity 
+Win at work in a diverse culture--Visa sponsorship is available 
+Enjoy a pet-friendly office with 4 legged members of our team :) 
+
+Source: HealthTap, https://www.healthtap.com/work_with_us/jobs
+"
+16,0,"Description
+Intuit is the global leader in financial management software. We are pioneering the shift to cloud computing for consumers, small businesses and those that serve them. We are the champions of those who dare to dream. This means dramatically rethinking how we can enable small businesses and self-employed to run their businesses with confidence, and save time by using both our cloud solutions and our app partners.
+
+The Accountant Segment Analytics team is part of the Small Business and Self-Employed Data Analytics & Science team. It drives user growth and retention through Intuit's major partner -- accountants. We are an exciting, growing and fun team that works with industry-leading analytics tools, techniques and best practices.
+
+As a senior analyst, you will focus on delivering key insights to drive product adoption, enhance product features and increase user conversion and retention by partnering closely with product engineers, product managers and XD designers. You will dive deep into our data to uncover actionable insights and make recommendations that will influence the key product decisions. The ideal candidate will have a strong background in quantitative analysis using large data sets, and in data-driven decision making.
+
+
+Responsibilities:
+
+
+Partner with product management by providing analytics tracking, identify key metrics, build executive-facing dashboards to track product feature usage and performance
+Perform analytical deep-dives to analyze problems and product development opportunities by researching, designing & executing experiments and provide recommendations based on the experiment performance
+Develop a deep understanding of the Small Business Group ecosystem and be able to identify and analyze the impact of product changes on customer behavior, engagement and retention
+Apply your expertise in quantitative analysis, data mining, and the presentation of data to see beyond the numbers, understand how our users interact with the product and proactively come up with ideas to improve customer experience
+Communicate analytical findings and recommendations in a clear and concise way to non-technical audiences, both in oral and written presentations
+Qualifications
+MS or PhD degree in Statistics, Mathematics, Operations Research, CS, Econometrics or related field
+3+ years relevant experience with a proven track record of leveraging analytics to drive significant business impact.
+Advanced SQL skills and proficiency in visualization tools such as Tableau
+Experience with R, Python and Hive
+Experience working on ETL processes and procedures
+Familiar with tracking, instrumentation and the clickstream data
+Exceptional analytical skills and communication skills with the ability to influence decision makers and build consensus with teams
+"
+17,1,"JD.COM is looking for an exceptional self-motivated data scientist to join our Y-Division in JD.COM Silicon Valley R&D Center. Y-Division owns the technology platform that drives one of the largest supply chain and fulfillment networks in the world. As a data scientist, you will be able to work with the data generated by hundreds of millions of JD.COMs active users and your work will directly influence critical operations of the multi-billion dollar business such as inventory management, dynamic pricing, product selection, vendor management and more. 
+
+Responsibilities:
+Work with business, engineer and product management teams to form understandings of the requirements and processes of existing systems. Apply data mining, quantitative analysis and visualization techniques to exam existing business status and identify opportunities for improvements.
+Analyze and validate real-world data, work with engineer and product management teams to design solutions to improve data quality.
+Build predictive models and machine learning models to provide business insights.
+
+
+Qualifications:
+Master or Ph.D. degree in Computer Science, Operational Research, Statistics, Mathematics or related field.
+Hands-on experience with large scale data platforms such as Hadoop and Hive.
+Experience with data manipulation and analysis using SQL.
+Development experience in scripting languages such as Python.
+Experience with statistical software such as R.
+Ability to communicate the analysis results with the leadership teams to influence the strategy of product and business development.
+Excellent written and oral communication skills.
+About JD.com, Inc. 
+
+JD.com, Inc. is one of the Top 10 Internet Company, the largest online retailer in China and the countrys largest Internet company by revenue. The Company strives to offer consumers the best online shopping experience. Through its content-rich and user-friendly website jd.com and mobile applications, JD.com offers a wide selection of authentic products at competitive prices and delivers products in a speedy and reliable manner. JD.com has the largest fulfillment infrastructure of any e-commerce company in China. It operates 7 fulfillment centers, 196 warehouses in 46 cities, and 4,760 deliveries and pickup stations in 2,266 counties and districts across China. JD.com is a member of the NASDAQ100 and a Fortune 500 company. 
+
+About JD-Y team 
+
+JD Y Division (JD-Y) focuses on building a smart supply chain and using AI to drive retail reform. The Y division applies AI algorithm and use data-driven approaches in product selection, inventory management, pricing and promotion. It also leverage big data technologies in smart retail to lower the costs of distribution. The Y division is working with leaders in industry and academia to design and build the next generation supply chain management system. 
+
+JD.com is an Equal Opportunity Employer, making decisions without regard to race, color, religion, creed, sex, sexual orientation, gender identity, marital status, national origin, age, veteran status, disability, or any other protected class.
+"
+18,1,"Job description
+LinkedIn was built to help professionals achieve more in their careers, and every day millions of people use our products to make connections, discover opportunities and gain insights. Our global reach and our professional social network empower our data science teams to impact on the world’s workforce in ways no other company can. We are much more than a digital resume – we transform lives through innovative products and technology.
+LinkedIn’s Analytics Team leverages big data to empower business decisions. Our team is rapidly reinventing the way that proprietary data can be converted to insights to drive enhance product and features. We use our rich member data to measure, understand and improve our products.
+We are looking for a hands-on professional who is passionate about mining big data, turning data into insights, and making an impact through rigorous analysis, creative storytelling and timely actions. In this position, the data scientist will be expected to drive & lead technical horizontal projects across the team as well as work closely with product managers and engineers to drive LinkedIn’s core Premium Subscription products.
+A successful candidate will be both technically strong and business savvy, with a collaborative and resourceful style that’s contagious. Our team is highly entrepreneurial and business-focused.
+
+Responsibilities
+Able to translate business objectives into detailed analysis proposals and own end-to-end analytics, effectively communicating complex findings to the broader audiences in written and presentation formats.
+Ability to prioritize analysis resources and set direction in a fast-moving environment. Able to negotiate timelines with partner team based on broader business priorities.
+Design and analyze experiments to test new product ideas and convert the results into actionable next steps and product recommendations.
+Partner with cross-functional teams to lead or contribute to large-scale strategic projects as well as ongoing day to day operational activities.
+Exploratory data analysis with the goal of product ideation, prototyping, and developing new and innovative features that can drive additional value for/engagement from our members
+Formulate success metrics for completely novel products or business areas, socializing them and creating dashboards/reports to monitor them.
+Provide technical guidance and mentorship to junior team members.
+Basic Qualifications
+
+BS or above degrees in quantitative fields - Computer Science, Engineering, Operational Research, Statistics, Economics or related fields.
+5+ years experience in Analytics/Data Science working with large amounts of data.
+Experience with SQL/relational databases
+Experience with R or Python
+Experience with unstructured data systems, i.e., Hadoop, Pig/Hive/Spark, etc.
+Experience building visualization dashboards, such as Tableau, etc.
+Preferred Qualifications
+
+Masters or PhD degree in quantitative fields - Computer Science, Engineering, Operational Research, Statistics, Economics, Marketing or related fields.
+5+ years experience in Analytics/Data Science, ideally within the relevant domains of consumer internet industry, and product analytics.
+Experience with machine learning on large datasets.
+Proficient working knowledge of Unix/Linux environment and other programming languages such as Python, Java, Scala.
+Overall a highly driven, results-oriented, creative and nimble problem solver with a willingness to do “whatever it takes” to deliver business impact quickly.
+Excellent communications skills, with the ability to synthesize, simplify and explain complex problems to both technical and non-technical audiences.
+
+"
+19,1,"LinkedIn was built to help professionals achieve more in their careers, and every day millions of people use our products to make connections, discover opportunities and gain insights. Our global reach means we get to make a direct impact on the world’s workforce in ways no other company can. We’re much more than a digital resume – we transform lives through innovative products and technology.
+
+LinkedIn’s Analytics team leverages big data to empower business decisions and deliver data-driven insights, metrics, and tools in order to drive member engagement, business growth, and monetization efforts. With over 500 million members around the world, a focus on great user experience, and a mix of B2B and B2C programs, a career at LinkedIn offers countless ways for an ambitious data scientist to have an impact.
+
+We are now looking for a talented and driven individual to accelerate our efforts and be a major part of our data-centric culture. This person will work closely with various cross functional teams such as product, marketing, sales, engineering and operation to develop and deliver metrics, analyses, solutions and insights, with actionable recommendations to business partners. Successful candidates will exhibit technical acumen and business savvy, with a passion for making an impact through creative storytelling and timely actions.
+
+Responsibilities
+
+• Work with a team of high-performing analytics, data science professionals, and cross functional teams to identify business opportunities, optimize product performance or go to market strategy.
+• Analyze large-scale structured and unstructured data; develop deep-dive analyses and machine learning models to drive member value and customer success.
+• Design and develop core business metrics, create insightful automated dashboards and data visualization to track them and extract useful business insights
+• Design and analyze experiments to test new product ideas or go to market strategies. Convert the results into actionable recommendations.
+• Craft compelling stories; make logical recommendations; drive informed actions.
+• Engage with internal technology partners to prototype and validate tools developed in-house for near-real time processing of very large data sets
+• Initiate and drive projects to completion with minimal guidance?
+Basic Qualifications
+
+• Bachelor or higher degree in a quantitative discipline: statistics, operations research, computer science, informatics, engineering, applied mathematics, economics, etc.
+• Bachelors with 3+ years of industry experience or Masters with 1+ years of industry experience
+• Experience with SQL and relational database query performance.
+• Background in at least one programming language (e.g., R, Python, Java, Ruby, or Perl)
+• Experience in applied statistics and statistical modeling in at least one statistical software package, preferably R
+• Experience with data visualization tools (eg. Tableau, BI dashboarding, R visualization packages, etc.)
+• Experience working with product or sales or marketing analytics domain or experience building front end visualizations using JavaScript frameworks (e.g., jQuery, Marionette, D3, or Highcharts).?
+Preferred Qualifications
+
+• Masters or PhD degree in a quantitative discipline: statistics, operations research, computer science, informatics, engineering, applied mathematics, economics, etc.
+• Experience with manipulating massive-scale structured and unstructured data.
+• Experience with Hadoop or other MapReduce paradigms, and associated languages such as Pig, Hive, etc.
+• Working knowledge of Unix and Unix-like systems, git and reviewboard.
+• Excellent communications skills, with the ability to synthesize, simplify and explain complex problems to different types of audience.
+"
+20,1,"At Lyft, community is who we are and its what we do. Its what makes us different. To create the best ride for all, we start in our own community by creating an open, inclusive, and diverse organization where all team members are recognized for what they bring.
+
+Data is at the heart of how Lyft makes business and product decisions. As a data science team, we work collaboratively with partners across product, engineering, operations and growth to develop business insights and make actionable recommendations. Were looking for passionate data scientists to come work alongside us to take on some of the most interesting and impactful problems in ridesharing.
+
+Youll be working in a dynamic environment, where we embrace moving quickly to build the worlds best transportation. Data Scientists pursue a variety of problems ranging from understanding our passengers and drivers, to ensuring we have an efficient marketplace, to optimizing how we run our marketing and growth incentives. Youll dig into the data to uncover insights, design experiments and measure the impact, and ultimately help influence decision-making across the entire organization.
+
+Responsibilities:
+• Set business metrics that measure the health of our products, as well as passenger and driver experience
+• Partner with product managers, engineers, marketers, designers, and operators to translate business insights into decisions and action
+• Find opportunities for growth and efficiency for Lyft
+• Design and analyze product experiments; communicate results and launch decisions
+• Develop analytical frameworks to monitor business and product performance
+
+Experience & Skills:
+• Degree in a quantitative field like statistics, economics, applied math, operations research or engineering. Advanced degrees are preferred
+• 3+ years of industry experience in a data science or analytics role
+• Proficiency in SQL - able to write structured and efficient queries on large data sets
+• Experience in programming, especially with data science and visualization libraries in Python or R
+• Strong oral and written communication skills, and ability to collaborate with cross-functional partners to build the business
+
+Lyft is an Equal Employment Opportunity employer that proudly pursues and hires a diverse workforce. Lyft does not make hiring or employment decisions on the basis of race, color, religion or religious belief, ethnic or national origin, nationality, sex, gender, gender-identity, sexual orientation, disability, age, military or veteran status, or any other basis protected by applicable local, state, or federal laws or prohibited by Company policy. Lyft also strives for a healthy and safe workplace and strictly prohibits harassment of any kind. Pursuant to the San Francisco Fair Chance Ordinance and other similar state laws and local ordinances, and its internal policy, Lyft will also consider for employment qualified applicants with arrest and conviction records"
+21,1,"Research Scientist - San Francisco
+San Francisco
+Science
+At Lyft, community is what we are and it’s what we do. It’s what makes us different. To create the best ride for all, we start in our own community by creating an open, inclusive, and diverse organization where all team members are recognized for what they bring.
+Lyft’s Research Science Team builds mathematical models underpinning the platform’s core services. Compared to other technology companies of a similar size, the set of problems that we tackle is incredibly diverse. They cut across optimization, prediction, modeling, inference, transportation, and mapping. We are hiring motivated experts in each of these fields. The ideal candidate is a critical thinker, is passionate about solving mathematical problems with data, and is excited about working in a fast-paced, innovative and collegial environment.
+Responsibilities:
+Work with Engineers, Product Managers, and Business Partners to frame problems, both mathematically and within the business context.
+Perform exploratory data analysis to gain a deeper understanding of the problem
+Construct and fit statistical, machine learning, or optimization models
+Write production modeling code; collaborate with Software Engineers to implement algorithms in production
+Design and run both simulated and live traffic experiments
+Analyze experimental and observational data; communicate findings; facilitate launch decisions
+Experience & Skills:
+M.S. or Ph.D. in Statistics, Operations Research, Mathematics, Computer Science, or other quantitative fields
+4+ years professional experience
+Passion for solving unstructured and non-standard mathematical problems
+End-to-end experience with data, including querying, aggregation, analysis, and visualization
+Proficiency with Python, or another interpreted programming language like R or Matlab
+Willingness to collaborate and communicate with others to solve a problem
+Lyft is an Equal Employment Opportunity employer that proudly pursues and hires a diverse workforce. Lyft does not make hiring or employment decisions on the basis of race, color, religion or religious belief, ethnic or national origin, nationality, sex, gender, gender identity, sexual orientation, disability, age, military or veteran status, or any other basis protected by applicable local, state, or federal laws or prohibited by Company policy. Lyft also strives for a healthy and safe workplace and strictly prohibits harassment of any kind. Pursuant to the San Francisco Fair Chance Ordinance and other similar state laws and local ordinances, and its internal policy, Lyft will also consider for employment qualified applicants with arrest and conviction records.
+
+
+"
+22,1,"We’re looking for Data Scientists to work on our core and business products at Oculus with a passion for virtual reality to help drive informed business decisions. You will enjoy working with one of the richest data sets in the world, cutting edge technology, and the ability to see your insights turned into real products on a regular basis. The perfect candidate will have a background in a quantitative or technical field, will have experience working with large data sets, and will have some experience in data-driven decision making. You are scrappy, focused on results, a self-starter, and have demonstrated success in using analytics to drive the understanding, growth, and success of a product.
+Responsibilities
+* Apply your expertise in quantitative analysis, data mining, and the presentation of data to see beyond the numbers and understand how our users interact with our core/business products
+* Partner with Product and Engineering teams to solve problems and identify trends and opportunities
+* Inform, influence, support, and execute our product decisions and product launches.
+* The Data Scientist Analytics role has work across the following four areas:
+* Data Infrastructure
+o Working in Hadoop and Hive primarily, sometimes MySQL, Oracle, and Vertica
+o Authoring pipelines via SQL and Python based ETL framework
+o Building key data sets to empower operational and exploratory analysis
+o Automating analyses
+* Product Operations
+o Setting goals
+o Designing and evaluating experiments monitoring key product metrics, understanding root causes of changes in metrics
+o Building and analyzing dashboards and reports
+* Exploratory Analysis
+o Proposing what to build in the next roadmap
+o Understanding ecosystems, user behaviors, and long-term trends
+o Identifying levers to help move key metrics
+o Evaluating and defining metrics
+o Building models of user behaviors for analysis or to power production systems
+* Product Leadership
+o Influencing product teams through presentation of work
+o Communicating of state of business, experiment results, etc to product teams
+o Spreading best practices to analytics and product teams
+Minimum Qualification
+* 4+ years experience doing quantitative analysis.
+* BA/BS in Computer Science, Math, Physics, Engineering, Statistics or other technical field.
+* Experience in SQL or other programming languages.
+* Development experience in at least one scripting language (PHP, Python, Perl, etc.)
+Facebook is proud to be an Equal Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender, gender identity, gender expression, transgender status, sexual stereotypes, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. If you need assistance or an accommodation due to a disability, you may contact us at accommodations-ext@fb.com or you may call us at +1 650-308-7837.
+Seniority Level
+Not Applicable
+Industry
+* Internet
+Employment Type
+Full-time
+Job Functions
+* Engineering
+ 
+* Information Technology
+
+"
+23,1,"We’re looking for a Data Scientist to help us connect Pinners to actionable content that improves the Pinner experience. You’ll apply quantitative analysis, modeling, and data mining to improve the relevance of Pins across our Ads, Search, and Feeds products.
+What You’ll Do
+Perform deep dive analysis to understand and optimize the key levers of our ads and search ecosystems
+Design core metrics that serve as the North Stars for team efforts and model trade offs across product areas
+Apply statistics, modeling, and ML to improve the efficiency of systems and relevance algorithms across Search, Home Feed, and Related Pins
+Work with product managers and engineers to design data products and debug A/B experiments
+What We’re Looking For
+2+ years of work experience applying scientific methods to solve-real-world problems on web scale data
+Expertise in at least one scripting language, and proficiency in SQL/Hive
+Knowledgeable about the machine learning trade-offs and model evaluation
+You can lead initiatives across multiple product areas while communicating findings with leadership and product teams
+"
+24,0,"Job description
+Quizlet drives product development priorities and decision-making through data. Our culture demands timely insights and accurate data about how tens of millions of learners and teachers are using Quizlet in a global context across mobile and web platforms.
+
+Quizlet’s data team includes
+
+Analysts passionate about inquiry, exploration, and understanding;
+Data scientists who drive development of data-driven product features like search, classification, and recommendations;
+and Data Engineers that scale our data systems up to handle trillions of events.
+We're looking for a quantitative Senior Product Analyst to drive inquiry and informed product decisions. Someone who is passionate about analytics and wants help shape the future of analytics team at Quizlet. You will join a successful company with a fast-growing user base already in the tens of millions and help us bring our vision for data and insights to reality. You are scrappy, focused on results, a self-starter, and have demonstrated success in using analytics to drive the understanding, growth, and success of a product.
+
+You'll drive the maturity and excellence of our quantitative analysis, working with product managers, designers, engineers and data scientists to help ensure accuracy and clarity. You'll serve in a pivotal role, identifying important lines of inquiry on your own as well as driving inquiry on behalf of leaders at the company. In this role, you’ll have visibility and impact across the company.
+
+Responsibilities
+
+Consult with product & engineering teams to design, run and analyze the most useful experiments and ensure data resulting from product launches will be useful and usable
+Drive data integrity, help engineering prioritize updates to the data pipeline and tooling
+Explore data to find actionable insights and make product recommendations through funnels, cohort analyses, long-term trends, user segmentation, regression models, and more.
+Apply your expertise in quantitative analysis, data mining, and the presentation of data to help the team see beyond the numbers and understand how our users interact with our core/business products.
+Monitor key performance metrics, and understand root causes of change.
+Help product & engineering teams choose the most important top-level metrics for their mission and goals, and through your exceptional analytical skills help them gain deeper insights into user / product interaction
+Help drive and promote the overall data-driven culture at Quizlet
+Requirements
+
+Demonstrated persistence in getting to the root of unexpected or unexplained changes in product metrics
+Demonstrated experience synthesizing business and product priorities, product and monetization features, opportunities and constraints into a cohesive set of key metrics and roadmap for improving data systems
+High degree of demonstrated initiative and ownership
+Fluency in SQL, as well as a deep understanding of statistical analysis, experiment design, and common pitfalls of data analysis
+Some development experience in at least one scripting language (PHP, Python, Perl, R, etc.)
+Strong communicator: You effectively synthesize, visualize, and communicate your ideas to others
+You can quickly establish credibility with teams and effectively lead through influence
+Degree in Math, Physics, Statistics, Economics, Computer Science, or other quantitative fields
+2+ years of experience doing quantitative analysis, reporting and analytical problem solving for a consumer technology company
+Seniority Level
+Mid-Senior level
+
+Industry
+E-Learning Computer Software Internet
+Employment Type
+Full-time
+
+Job Functions
+Engineering Information Technology
+"
+25,0,"At Realtor.com, data and analytics are at the core of our business and growth strategy. We collect and process terabytes of data every day, transforming that data into information that powers decisions for millions of real estate offices and consumers across the country. We combine real estate property data with active listing data and track consumer behavior on our sites. 
+
+We are looking for a talented, experienced and creative data analyst, passionate about discovering and presenting insights from our data to drive great experiences for millions of users who visit Realtor.com for everything related to home. The successful candidate will have a strong understanding of Internet business models, expertise in storyboarding, using visualization tools, statistical analysis, and data modeling to provide actionable business insights. 
+
+The successful candidate will be highly motivated, energetic, proactive in identifying opportunities to improve traffic, conversion and consumer experience, a creative problem solver and a strong bias for generating and disseminating business insights. 
+
+Duties and Responsibilities:
+Partner with data, product, engineering & finance teams to identify critical business problems and areas of opportunity
+Leverage clickstream leads and marketing data to develop hypothesis based analyses in support of key growth initiatives
+Develop and operationalize analysis framework that forms a standard reference for ongoing business performance measurement
+Lead the cadence of presenting business insights to senior management
+Translate insights into AB testing ideas that drive step-function improvements in conversion and consumer engagement KPIs
+Lead strategic analyses to understand consumer behavior, develop AB testing ideas and drive product & experience changes
+Work with senior leaders and analytics team members to understand key business problems, define KPIs to track performance and offer recommendations to optimize business performance
+Education, Skills, and Experience:
+Bachelor's degree in Business Administration/Management, Statistics, Economics, Finance, Mathematics, Computer Science or Engineering
+7+ years experience working in highly analytical environment performing complex data and statistical analyses and generating data-driven insights
+3+ years developing and presenting insights decks to senior management, leading to data-led business action
+Experience working with internal technical teams responsible for site instrumentation, data engineering, data science & analytics
+Proficient in Excel (functions, pivots, visualization) and PowerPoint (story-telling, presenting analytical findings)
+Strong SQL skills and experience with one or more BI/analytics tools like PowerBI, Tableau, Microstrategy, Business Objects, etc. is required
+Experience using one of Omniture/Adobe Analytics, Google Analytics, Webtrends, etc. is required
+Experience querying Clickstream data is required
+Strong analytical skills, problem solver, and attention to detail
+Excellent verbal/written communication, data visualization and presentation skills
+Motivated self-starter, revels in a dynamic fast changing environment and brings a can-do attitude
+Results driven and ability to coordinate and prioritize multiple tasks in a fast-paced, dynamic environment
+Highly desirable - Experience with mathematical modeling tools like R (linear, nonlinear, regression, decision trees)
+"
+26,1,"Roblox, Data Scientist, San Mateo, CA 
+
+WHY ROBLOX? 
+
+Robloxs Imagination Platform is ushering in the next generation of entertainment, enabling kids of all ages to imagine, create, and play together in immersive 3D worlds. Powered by a global community of millions of developers and creators, Roblox allows anyone to build, publish, and monetize any experience imaginable. 
+
+comScore ranks Roblox as one of the top online entertainment platforms for audiences under the age of 18 based on average monthly visits and time spent. In addition, Roblox has been named one of Americas Fastest-Growing Private Companies on the Inc. 5000 for the past two consecutive years. 
+
+Work with the most passionate, team-oriented, visionary, crazy-smart people youll ever meet. As a Data Scientist, you will be a key participant in helping our product and engineering teams shape the future of Roblox. Youll partner with leaders across the company to better understand our players and builders, performing ad hoc analysis, creating dashboards, defining KPIs, and applying models. 
+
+You Are:
+Passionate about data: Continuously learning new techniques and tools to extract value from data. You have a degree in Statistics, Economics, Computer Science or other relevant field.
+A strong communicator: You understand that analysts must be able to present their findings in meaningful ways and engage in spirited discussions about the findings.
+A capable statistician: You understand the value of characterizing data by its distribution. Covariance, Bias, and Conditional Probability are concepts that you rely on every day.
+A expert with SQL: Querying an RDBMS is like breathing for you
+Strongly motivated to become proficient in the state-of-the-art tool set for accessing and crunching massive volumes of data, for instance, Spark, Flink, and Drill.
+Experienced in developing models to draw insights from data. You will use regression techniques, data mining, and statistical techniques to create new, scalable solutions to solve difficult business problems.
+Uncomfortable with high-level commercial tools tools that limit your access to data and that constraint what you can do with it. You prefer the low-level open-source stack of the expert--eg, R over SAS, Excel, or Tableau.
+Relentlessly curious.
+You Will:
+Accelerate product development through your understanding of the underlying data and your ability to partner with product and technical leaders to provide insights that drive growth.
+Access raw data, and then transform it, analyze it, and render it in a compelling way--all using a custom analytics tool kit built from state-of-the-art open-source libraries.
+Encode your work in dynamic dashboards and publish them to your internal customers.
+Influence how Roblox interacts with its players and its platform developers
+Acquire new skills and refine the ones you have in twice-weekly Team workshops
+You'll Love:
+Excellent medical, dental, and vision coverage
+A rewarding 401k program
+Flexible vacation policy
+Free catered lunches five times a week and several fully stocked kitchens with unlimited snacks
+Onsite fitness center and fitness program credit
+Annual CalTrain Go Pass
+A super-cool Roblox Admin badge for your avatar
+Rock star status with our community
+Roblox Powering Imagination. 
+"
+27,1,"ShareThis is a big data company that owns online behavior data of 1b+ users globally. We are developing an audience intelligence platform with cutting edge data science technologies. We are looking for innovative data scientists to join our exciting projects.
+
+Your will drive the development of model building pipeline, feature generation, feature selection and model tuning. You will provide the vision of data science, and guide junior data scientists and engineers.
+What You'll Need
+PhD in a field related to data science, machine learning, or artificial intelligence
+5+ years of experience in applying machine learning algorithms
+Deep understanding of machine learning algorithms, such as deep learning, GBM, SVM, etc
+Extensive experience in feature generation, feature selection, and model tuning
+Familiar with machine learning packages such as sci-kit learn
+Fluent in Python
+Nice to Have
+Programming experience in Scala or Java
+Experience with Spark, Spark ML, and PySpark
+Experience with TensorFlow on Spark or H20 on Spark
+"
+28,1,"With power chain management from creation to consumption, and over half a dozen manufacturing hubs here in the U.S., Siemens Energy Management provides technologies for the economic, reliable, and intelligent transmission and distribution of electrical power. From smart grid and energy automation technology, to power supply for industrial plants and high-voltage transmission systems, Siemens is providing intelligent technologies to a diverse clientele.
+For more information, please visit: http://www.siemens.com/businesses/us/en/energy-management.htm
+Job Description
+Position Description:
+The data scientist will support the growing analytical needs of the company as customer data collection efforts expand. The primary duties of the position will involve performing statistical analysis, predictive modeling and implementing algorithms to enhance our anomaly detection, customer segmentation and advanced data exploration. These activities are conducted in support of furthering the development of the company’s products and technology.
+Responsibilities
+The Data Scientist’s duties will include, but not be limited to:
+  A research project tailored to their strengths, spanning the domains of machine learning, graph analytics, process automation etc.
+  Assist the team with the analysis, design, development, testing, and documentation of predictive models, tools, visualizations and algorithms.
+  Building statistical models: after participating in the model design, the data scientist will work with analytics team in the preparation of data, development of candidate models, evaluation and selection of final models.
+  Completing written documentation and reports of results. This will take the form of business reports, internal technology summaries and statistical analysis.
+  Delivery and presentation of accurate and actionable business and technical analyses to support sales, customer retention, and technology improvement efforts.
+Qualification
+  Prefer candidates working towards Master’s degree in Computer Science, Statistics, Mathematics, or a related technical field. Consideration will be given to exceptional Bachelor level candidates as well.
+  Prior statistical modeling and/or machine learning experience are required.
+  Experience with large data sets, data mining, clustering, forecasting, deep learning and distributed algorithms is highly desirable.
+  Strong coding and scripting skills are required. Background in model building in software packages such as R or Python is required.
+  Must have exceptional communication skills, both written and oral, in order to explain technical concepts and analysis implications clearly to a wide audience and to translate business objectives into actionable analyses.
+  Must be able to understand and creatively solve problems that span statistics, technology, and business.
+  Ability to work independently with minimal supervision;
+All applicants must submit the following documents with their completed application:
+  Resume
+  Transcript
+  A six sentence personal statement describing qualifications and reason for interest in the job.
+Why Siemens?
+Competitive compensation.
+Excellent health, vision, and dental plans with many options from which to choose.
+All employees receive Life Insurance, Short, and Long Term Disability coverage.
+401k match dollar for dollar up to 6% of gross salary.
+Education reimbursement programs available.
+Extensive product training and professional career development.
+"
+29,1,"About Strava
+
+Strava is Swedish for “strive,” which epitomizes our attitude and ambition: We’re a passionate and committed team, unified by our mission to build the most engaged community of athletes in the world. Every day, we’re searching for new ways to inspire athletes and make the sports they love even more fun. But it’s not only about achieving – we’re an inclusive team, dedicated to elevating each other and the members of our community. That balanced approach has helped us revolutionize our industry, and we’re just getting started. Millions of athletes are on Strava, millions more will come. When you’re ready for a challenge and a team that will support you along the way, join us.
+
+About this role
+
+Strava is looking for an Data Scientist to help establish our Data Science practice and develop insights and products that improve the experience of athletes on our platform. You will work on a variety of projects across product teams, including recommendations, segmentation, and statistical modeling. The successful candidate will have a passion for data, finding the best algorithm for the job, and making an impact on the business.
+
+Responsibilities
+
+Work with product and engineering teams to define, scope, and implement projects in production
+Apply machine learning and other relevant techniques to business problems
+Build models from the ground up, from data exploration through feature generation, to model construction and optimization
+Design and evaluate A/B tests to quantify impact
+Partner with Data Engineering and Platform teams to identify and build tools for Data Science
+Requirements
+
+Bachelor’s Degree in Statistics, Machine Learning, Computer Science, Mathematics, Economics or other quantitative field; advanced degree a plus
+2 years of hands-on experience as a Data Scientist, Machine Learning engineer, or similar position
+Ability to translate business needs into models and data products, and communicate results to product and leadership teams
+Development experience with Python or other scripting language
+Proficient with SQL
+Experience with geographic data a plus
+Backed by Sequoia Capital, Madrone Partners and Jackson Square Ventures, Strava is expanding in order to exceed the needs of our growing community of global athletes. By joining our team, you will help push Strava forward in fresh, innovative ways. You will engage in interesting and challenging work that will improve the lives of our athletes every day. And in the same way that Strava is deeply committed to unlocking the potential of our athletes, we are dedicated to providing a world-class workplace where our employees can grow and thrive. Join us!
+
+Strava is an equal opportunity employer.  In keeping with the values of Strava, we make all employment decisions including hiring, evaluation, termination, promotional and training opportunities, without regard to race, religion, color, sex, age, national origin, ancestry, sexual orientation, physical handicap, mental disability, medical condition, disability, pregnancy or pregnancy-related condition, marital status, height and or weight."
+30,0,"San Francisco, CA
+About Strava
+
+Strava is Swedish for “strive,” which epitomizes our attitude and ambition: We’re a passionate and committed team, unified by our mission to build the most engaged community of athletes in the world. Every day, we’re searching for new ways to inspire athletes and make the sports they love even more fun. But it’s not only about achieving – we’re an inclusive team, dedicated to elevating each other and the members of our community. That balanced approach has helped us revolutionize our industry, and we’re just getting started. Millions of athletes are on Strava, millions more will come. When you’re ready for a challenge and a team that will support you along the way, join us.
+
+About this role
+
+Strava exists to serve athletes and our goal is to build the world's most engaged community of athletes.  We are looking to hire a Marketing Analyst who is passionate about telling the Strava story with data, both to our athlete community and the world at large. This position partners with the Marketing team, which has global responsibility for driving brand awareness, user acquisition, and engaging our user base. The ideal candidate will be curious, collaborative, have strong initiative and a nose for uncovering interesting insights.   
+
+Day to day, the Sr. Marketing Analyst will be an important member of both the Marketing and Analytics teams, providing team members with information on the business, assessing market opportunity, and impact of all marketing initiatives, while working to help drive longer term strategy with a data oriented mindset.
+
+Responsibilities
+
+Use data to tell the Strava story, and develop insights about trends in athletics and health & wellness
+Analyze marketing initiatives, identify areas of opportunity, and proactively engage in setting strategy
+Help launch, optimize, and measure the impact of brand awareness, user acquisition, and user engagement projects
+Design experiments and measure outcomes
+Work on multi-touch attribution models leveraging all marketing channels, including social, PR, email, paid, and in-app messaging
+Champion data-driven decision-making and Analytics best practices within Marketing
+Own requirements and data quality for marketing launches and related engineering development processes
+Develop key metrics and dashboards that help the team manage their objectives
+Requirements
+
+BS/MS in Statistics, Economics, Math, Physics, or similar quantitative field, or equivalent experience
+4+ years of relevant experience
+Strong SQL skills
+Experience measuring the impact of brand campaigns across social, blogs, video, email and other channels
+Ability to process and analyze complex data sets, and interpret them to make business decisions
+Strong communication skills, attention to detail, and ability to manage a project or product
+Experience with subscription businesses, growth efforts, and/or social ad tech is a plus
+Prior experience in consumer Marketing Analytics preferred
+Backed by Sequoia Capital, Madrone Partners and Jackson Square Ventures, Strava is expanding in order to exceed the needs of our growing community of global athletes. By joining our team, you will help push Strava forward in fresh, innovative ways. You will engage in interesting and challenging work that will improve the lives of our athletes every day. And in the same way that Strava is deeply committed to unlocking the potential of our athletes, we are dedicated to providing a world-class workplace where our employees can grow and thrive. Join us!"
+31,0,"Description
+LCI is an industry leader at analytical and technological services to the financial industry. Founded over 25 years ago, we handle over 1.3 billion accounts a year for the world's leading lenders, servicers, and debt buyers. We specialize in solutions for bankruptcy, at-risk consumer behavior, and the financial account life cycle. Our unique high-tech approach allows us to build software and services that are more cost-effective, and provide higher returns, than others in our industry.
+Lifestyle At LCI
+LCI has an innovative, entrepreneurial structure, with great opportunities as a rapidly growing company.
+About The Job
+You will be leading and executing high impact project. You will be working with the largest bankruptcy database nationwide and present findings to senior management.
+You will join the Data Quality Assurance team and ensure the success of the company by assisting in the delivery of our products and services to our clients, through the operational processing of various systems.
+You may be working closely with project leaders, clients, and other business stakeholders. You may manage/participate in multiple projects requiring coordination with other teams.
+What we're looking for:
+0 to 2 years of data analysis experience, preferably leveraging MS SQL Server
+Entry-level knowledge of MS SQL Server (SSMS, SSIS, and SSRS), SQL/Transact-SQL, and data analysis.
+Advanced Excel and PowerPoint: VBA would be a plus.
+Experience in manipulating data, extracting desired information and experience in presenting data to senior management
+Self-motivated and able to manage multiple projects simultaneously
+Strong organization skills, attention to details and ability to multi-task
+Strong analytical and problem solving skills
+Strong written and verbal communication
+Creative and out of the box thinking
+Knowledge of legal Documents would be a plus
+Full Time Position
+Monday to Friday (9:00 am - 5:00 pm)
+0-2 years of data analysis experience, preferably leveraging MS SQL Server
+Entry-level knowledge of MS SQL Server (SSMS, SSIS, and SSRS), SQL/Transact-SQL, and data analysis.
+Advanced Excel and PowerPoint: VBA would be a plus.
+Experience in manipulating data, extracting desired information and experience in presenting data to senior management
+Self-motivated and able to manage multiple projects simultaneously
+Strong organization skills, attention to details and ability to multi-task
+Strong analytical and problem solving skills
+Strong written and verbal communication
+Creative and out of the box thinking
+Knowledge of legal Documents would be a plus
+Requirements
+Expertise
+Data Operations
+Education
+Bachelors (or equivalent work experience)
+Job Type
+Full Time
+Location
+CA-San Francisco
+Years of Experience
+0-1 Year
+All members of the Verisk Analytics Family of Companies are equal opportunity employers. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability, protected veteran status, or any other legally protected classification.
+"
+32,1,"Job description
+Position Description
+A Data Scientist is responsible for analyzing large data sets to develop custom models and algorithms to drive business solutions. Data Scientists work on project teams in order to provide analytical support to projects (for example, email targeting, business optimization, consumer recommendations) for Walmart eCommerce. Data Scientists are responsible for building large data sets from multiple sources in order to build algorithms for predicting future data characteristics. Those algorithms will be tested, validated, and applied to large data sets. Data Scientists are responsible for training the algorithms so they can be applied to future data sets and provide the appropriate search results. Data Scientists are responsible for researching new trends in the industry and utilizing up-to-date technology (for example, HBase, MapReduce, LAPack, Gurobi) and analytical skills to support their assigned project.
+Build complex data sets from multiple data sources, both internally and externally.
+Build learning systems to analyze and filter continuous data flows and offline data analysis.
+Combine data features to determine search models.
+Conduct advanced statistical analysis to determine trends and significant data relationships.
+Demonstrates up-to-date expertise and applies this to the development, execution, and improvement of action plans
+Develop custom data models to drive innovative business solutions.
+Develop models of current state in order to determine needed improvements.
+Models compliance with company policies and procedures and supports company mission, values, and standards of ethics and integrity
+Provides and supports the implementation of business solutions
+Research new techniques and best practices within the industry.
+Scale new algorithms to large data sets.
+Train algorithms to apply models to new data sets.
+Utilize system tools including (MySQL, Hadoop, Weka, R, Matlab,ILog).
+Validate models and algorithmic techniques.
+Work with cross-functional partners across the business
+Position Summary
+As an algorithm engineer, you will work on code that improves our operations and experiences for customers. You will marry state-of-art optimization algorithms with distributed systems engineering to build systems that drive efficiencies in our logistics and supply-chain.
+Minimum Qualifications
+Masters with 5 years experience or Ph.D. degree in Operations Research, Computer Science, or Machine Learning.
+Deep knowledge of computational complexity theory, capable to code time and space efficient algorithms with good scalability.
+Ability to understand and mathematically model practical problems within eCommerce and/or supply chain domains.
+Proficient with at least one of the object-oriented languages: Python, Java, C++.
+Preferred Qualifications
+Solid knowledge in state-of-art algorithms/meta-heuristics (such as Simulated Annealing, Ant Colony Optimization, and Tabu Search) used to solve high complexity combinatorial optimization problems (such as VRP and VRPTW).
+Experience with building Operations Research/Machine Learning algorithms and productionizing them at scale in a distributed computation environment.
+Ability to independently conduct literature survey, find cutting edge heuristics or algorithms, and implement them in an engineering environment.
+Publication in peer-reviewed journals is a plus.
+Minimum Qualifications
+Bachelor's Degree in Computer Science or related field and 5 years experience building scalable ecommerce applications or mobile software
+"
+33,0,"WhatsApp is a fast, simple and reliable way to talk to anyone in the world. More than 1 billion people in over 180 countries use WhatsApp to stay in touch with friends and family, anytime and anywhere. WhatsApp is not only free but also available on multiple mobile devices and in low connectivity areas — making it accessible and reliable wherever you are. It's a simple and secure way to share your favorite moments, send important information or catch up with a friend. WhatsApp helps people connect and share no matter where they are in the world.
+Responsibilities
+Build/maintain reports, dashboards, and metrics that equips the CO organization to scale successfully
+Engage in discussions to identify problems, quantify and improve the quality of workflows through data analyzes
+Run SQL queries, provide reports or updates
+Build data expertise and own data quality for allocated areas of ownership
+Create pipelines and queries in our data warehouse to analyze large sets of internal data
+Mentor others as needed on best practices for design and implementation of cutting-edge analytics solutions
+Leverage data to understand our products in depth, identify areas of opportunity, and support projects to drive growth and engagement
+Minimum Qualification
+BA/BS in Computer Science, Math, Physics, Engineering, Statistics or other technical field
+2+ years experience in using SQL
+2+ year(s) experience building data reporting
+Demonstrated ability to analyze data to identify deliverables, gaps and inconsistencies
+Demonstrated ability to identify and communicate data driven insights
+Demonstrated ability to prioritize among conflicting demands
+Preferred Qualification
+Experience using languages and packages such as R, MATLAB, SPSS, SAS, Stata, etc.
+Experience with at least one scripting language (PHP, Python, Perl, etc.)
+Experience with large data sets and distributed computing (Hive/Hadoop)
+Experience using Tableau
+
+"

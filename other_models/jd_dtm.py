@@ -21,19 +21,22 @@ from sklearn.feature_extraction import text
 
 
 # File pathways
-github_function_folder = '/Users/Leonova/Repos/jd-classifier/'
+function_folder = '/Users/Leonova/Repos/jd-classifier/'
 jd_folder = '/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data School/JDs Training & Test Docx'
-github_image_folder = '/Users/Leonova/Repos/jd-classifier/Images/'
+image_folder = '/Users/Leonova/Repos/jd-classifier/Images/'
+model_folder = '/Users/Leonova/Repos/jd-classifier/other_models'
+
 
 # Change directory
-os.chdir(github_function_folder)
+os.chdir(function_folder)
 # os.getcwd()
 
 # Import special functions
 import clean_data as cld
 
         
-
+# Change directory
+os.chdir(model_folder)
 # ==============================
 # ========= Load Data ==========
 # ==============================
@@ -55,6 +58,8 @@ jds = cld.create_corpus_df(
 # Create a more concise dataframe with just two columns
 j = pd.DataFrame.copy(jds[['is_primary_role', 'description']])
 
+# Export results into a csv
+j.to_csv('jd_corpus.csv')
 
 
 # ======================================
@@ -77,8 +82,8 @@ modified_stop_word_list = text.ENGLISH_STOP_WORDS.union(my_additional_stop_words
 # Modify the default parameters based on intuition and previous exploration oh other paramters
 vect = text.CountVectorizer(
         binary=True,                                 # Count the word once per document, even if it appears multiple times (I want to not give extra emphasis to a word if it appears 10 times in one document, but rarerly in others)  
-        ngram_range=(1, 2),                          # Capture 1 to 3 length word combinations (there might be some important phrases)
-        #token_pattern=r'(?u)\b\w\w+\b|r|C',          # R (should be included in the vocabulary)
+        ngram_range=(1, 2),                          # Capture 1-2 term long tokens
+        #token_pattern=r'(?u)\b\w\w+\b|r|C',         # R (should be included in the vocabulary)
         token_pattern=r'(?u)\b\w+\b',                # Keep single character letters
         stop_words = modified_stop_word_list,        # Including Data Science in the JD is 'cheating'
         min_df=2                                     # The term appears in at least 2 documents (may want to increase this threshold once data sample is larger)
@@ -107,3 +112,9 @@ y = j.is_primary_role
 # Convert descriptions into a DTM
 vect.fit(X)
 X_dtm = vect.transform(X)
+
+
+# Convert the sparse DTM to a dense matrix
+a = X_dtm.todense()
+b = pd.DataFrame(data=a, columns=sorted(vect.vocabulary_))
+b.to_csv("jd_dense_dtm.csv")
