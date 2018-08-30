@@ -134,7 +134,7 @@ ivd.set_index('title', inplace = True)
 ivd.to_csv(os.path.join(model_folder,"dense_dtm.csv"))
 
 # ===========================
-# ======= Clusters  =========
+# ======= Dendrogram  ========
 # ===========================
 
 
@@ -148,8 +148,15 @@ print(cluster.labels_)
 
 import scipy.cluster.hierarchy as shc
 
-plt.figure(figsize=(10, 7))  
-plt.title("Customer Dendograms")  
-dend = shc.dendrogram(shc.linkage(ivd, method='ward'))  
+plt.figure(figsize=(10, 15))  
+plt.title("Jobs Dendograms")  
+# Calculate the distance between each sample
+Z = shc.linkage(ivd, 'ward')
+# Plot with Custom leaves
+dend = shc.dendrogram(Z, orientation="left", leaf_font_size=15, labels=ivd.index)
+
+
+plt.savefig(os.path.join(image_folder,'Dendogram.png'), bbox_inches="tight")
+
 
 
