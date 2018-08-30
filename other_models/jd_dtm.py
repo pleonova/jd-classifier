@@ -63,7 +63,7 @@ jds = cld.create_corpus_df(
 # Export results into a csv
 jds.to_csv(os.path.join(model_folder, 'corpus.csv'))
 
-# Create a more concise dataframe with just two columns
+# Create a copy of the dataframe
 j = pd.DataFrame.copy(jds[['title','is_primary_role', 'description']])
 
 
@@ -130,8 +130,8 @@ den = X_dtm.todense()
 
 voc_den = pd.DataFrame(data=den, columns=sorted(vect.vocabulary_))
 # Select a column to add to dense and then re-index
-ivd = pd.concat([jds['title'], voc_den], axis = 1, sort = True)
-ivd.set_index('title', inplace = True)
+ivd = pd.concat([jds[['short_title']], voc_den], axis = 1, sort = True)
+ivd.set_index(['short_title'], inplace = True)
 
 
 ivd.to_csv(os.path.join(model_folder,"dense_dtm.csv"))
@@ -154,6 +154,25 @@ plt.title("Jobs Dendograms")
 Z = shc.linkage(ivd, 'ward')
 # Plot with Custom leaves
 dend = shc.dendrogram(Z, orientation="left", leaf_font_size=15, labels=ivd.index)
+
+
+
+
+# transforme the 'cyl' column in a categorical variable. It will allow to put one color on each level.
+df['cyl']=pd.Categorical(df['cyl'])
+my_color=df['cyl'].cat.codes
+ 
+# Apply the right color to each label
+ax = plt.gca()
+xlbls = ax.get_ymajorticklabels()
+num=-1
+for lbl in xlbls:
+num+=1
+val=my_color[num]
+lbl.set_color(my_palette(val))
+
+
+
 
 plt.savefig(os.path.join(image_folder,'Dendogram_updatedCountVect.png'), bbox_inches="tight")
 
