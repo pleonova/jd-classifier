@@ -14,9 +14,13 @@ Do senior titles get grouped?
 # Import relevant modules
 import os
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt  
 
-from numpy import count_nonzero
+
 from sklearn.feature_extraction import text 
+from sklearn.cluster import AgglomerativeClustering
+
 
 
 
@@ -54,11 +58,11 @@ jds = cld.create_corpus_df(
         )
         
 
+# Export results into a csv
+jds.to_csv(os.path.join(model_folder, 'corpus.csv'))
+
 # Create a more concise dataframe with just two columns
 j = pd.DataFrame.copy(jds[['is_primary_role', 'description']])
-
-# Export results into a csv
-j.to_csv(os.path.join(model_folder, 'corpus.csv'))
 
 # ======================================
 # ======= Document Term Matrix =========
@@ -117,9 +121,29 @@ X_dtm = vect.transform(X)
 a = X_dtm.todense()
 
 # Calculate the sparsity of the matrix
-sparsity = 1.0 - count_nonzero(a) / a.size
+sparsity = 1.0 - np.count_nonzero(a) / a.size
 
 
 
 b = pd.DataFrame(data=a, columns=sorted(vect.vocabulary_))
-b.to_csv("dense_dtm.csv")
+b.to_csv(os.path.join(model_folder,"dense_dtm.csv"))
+
+# ===========================
+# ======= Clusters  =========
+# ===========================
+
+
+# linkage "ward" minimizes the variant between the clusters
+cluster = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward')  
+cluster.fit_predict(a) 
+
+# print cluster assignment array
+print(cluster.labels_)  
+
+import scipy.cluster.hierarchy as shc
+
+plt.figure(figsize=(10, 7))  
+plt.title("Customer Dendograms")  
+dend = shc.dendrogram(shc.linkage(b, method='ward'))  
+
+
