@@ -22,22 +22,20 @@ from sklearn.feature_extraction import text
 
 
 # File pathways
-function_folder = '/Users/Leonova/Repos/jd-classifier/'
-jd_folder = '/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data School/JDs Training & Test Docx'
-image_folder = '/Users/Leonova/Repos/jd-classifier/Images/'
+main_folder = '/Users/Leonova/Repos/jd-classifier/'
+jd_folder = '/Users/Leonova/Repos/jd-classifier/jd_files/'
+#'/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data School/JDs Training & Test Docx'
+image_folder = '/Users/Leonova/Repos/jd-classifier/images/'
 model_folder = '/Users/Leonova/Repos/jd-classifier/other_models'
 
 
 # Change directory
-os.chdir(function_folder)
+os.chdir(main_folder)
 # os.getcwd()
 
 # Import special functions
 import clean_data as cld
 
-        
-# Change directory
-os.chdir(model_folder)
 # ==============================
 # ========= Load Data ==========
 # ==============================
@@ -60,7 +58,7 @@ jds = cld.create_corpus_df(
 j = pd.DataFrame.copy(jds[['is_primary_role', 'description']])
 
 # Export results into a csv
-j.to_csv('jd_corpus.csv')
+j.to_csv(os.path.join(model_folder, 'corpus.csv'))
 
 # ======================================
 # ======= Document Term Matrix =========
@@ -124,4 +122,4 @@ sparsity = 1.0 - count_nonzero(a) / a.size
 
 
 b = pd.DataFrame(data=a, columns=sorted(vect.vocabulary_))
-b.to_csv("jd_dense_dtm.csv")
+b.to_csv("dense_dtm.csv")
