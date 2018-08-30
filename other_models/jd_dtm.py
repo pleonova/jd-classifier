@@ -62,7 +62,8 @@ jds = cld.create_corpus_df(
 jds.to_csv(os.path.join(model_folder, 'corpus.csv'))
 
 # Create a more concise dataframe with just two columns
-j = pd.DataFrame.copy(jds[['is_primary_role', 'description']])
+j = pd.DataFrame.copy(jds[['title','is_primary_role', 'description']])
+
 
 # ======================================
 # ======= Document Term Matrix =========
@@ -118,15 +119,19 @@ X_dtm = vect.transform(X)
 
 
 # Convert the sparse DTM to a dense matrix
-a = X_dtm.todense()
-
+den = X_dtm.todense()
 # Calculate the sparsity of the matrix
-sparsity = 1.0 - np.count_nonzero(a) / a.size
+1.0 - np.count_nonzero(den) / den.size
 
 
 
-b = pd.DataFrame(data=a, columns=sorted(vect.vocabulary_))
-b.to_csv(os.path.join(model_folder,"dense_dtm.csv"))
+voc_den = pd.DataFrame(data=den, columns=sorted(vect.vocabulary_))
+# Select a column to add to dense and then re-index
+ivd = pd.concat([jds['title'], voc_den], axis = 1, sort = True)
+ivd.set_index('title', inplace = True)
+
+
+ivd.to_csv(os.path.join(model_folder,"dense_dtm.csv"))
 
 # ===========================
 # ======= Clusters  =========
@@ -135,15 +140,16 @@ b.to_csv(os.path.join(model_folder,"dense_dtm.csv"))
 
 # linkage "ward" minimizes the variant between the clusters
 cluster = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward')  
-cluster.fit_predict(a) 
-
+cluster.fit_predict(ivd) 
 # print cluster assignment array
 print(cluster.labels_)  
+
+
 
 import scipy.cluster.hierarchy as shc
 
 plt.figure(figsize=(10, 7))  
 plt.title("Customer Dendograms")  
-dend = shc.dendrogram(shc.linkage(b, method='ward'))  
+dend = shc.dendrogram(shc.linkage(ivd, method='ward'))  
 
 
