@@ -20,6 +20,8 @@ import matplotlib.pyplot as plt
 
 from sklearn.feature_extraction import text 
 from sklearn.cluster import AgglomerativeClustering
+import scipy.cluster.hierarchy as shc
+
 
 
 
@@ -85,11 +87,12 @@ modified_stop_word_list = text.ENGLISH_STOP_WORDS.union(my_additional_stop_words
 # Modify the default parameters based on intuition and previous exploration oh other paramters
 vect = text.CountVectorizer(
         binary=True,                                 # Count the word once per document, even if it appears multiple times (I want to not give extra emphasis to a word if it appears 10 times in one document, but rarerly in others)  
-        ngram_range=(1, 2),                          # Capture 1-2 term long tokens
+        ngram_range=(1, 1),                           # Capture 1 term long tokens
         #token_pattern=r'(?u)\b\w\w+\b|r|C',         # R (should be included in the vocabulary)
         token_pattern=r'(?u)\b\w+\b',                # Keep single character letters
         stop_words = modified_stop_word_list,        # Including Data Science in the JD is 'cheating'
-        min_df=2                                     # The term appears in at least 2 documents (may want to increase this threshold once data sample is larger)
+        min_df=3,                                    # The term appears in at least 3 documents (may want to increase this threshold once data sample is larger)
+        max_df=1.0
         )
 
 
@@ -145,9 +148,6 @@ cluster.fit_predict(ivd)
 print(cluster.labels_)  
 
 
-
-import scipy.cluster.hierarchy as shc
-
 plt.figure(figsize=(10, 15))  
 plt.title("Jobs Dendograms")  
 # Calculate the distance between each sample
@@ -155,8 +155,7 @@ Z = shc.linkage(ivd, 'ward')
 # Plot with Custom leaves
 dend = shc.dendrogram(Z, orientation="left", leaf_font_size=15, labels=ivd.index)
 
-
-plt.savefig(os.path.join(image_folder,'Dendogram.png'), bbox_inches="tight")
+plt.savefig(os.path.join(image_folder,'Dendogram_updatedCountVect.png'), bbox_inches="tight")
 
 
 
