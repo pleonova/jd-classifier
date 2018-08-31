@@ -21,7 +21,7 @@ setwd(model_folder)
 
 #corpus = Corpus(dir)
 # myCorpus = read.csv("jd_corpus.csv")
-myCorpus = read.csv("jd_detail_corpus.csv")
+myCorpus = read.csv("corpus.csv")
 
 # Set the ids to specific column
 corpus = VCorpus(DataframeSource(myCorpus), readerControl = 

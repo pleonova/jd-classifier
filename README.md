@@ -1,10 +1,10 @@
 # Job Classification Model
 
 ## Motivation
-Having completed [Data School: Machine Learning with Text](https://www.dataschool.io/learn/) course, I wanted to apply the concepts I learned to answer a question I frequently got asked: *What is the difference between a data scientist and a data analyst?*
+Having completed [Data School: Machine Learning with Text](https://www.dataschool.io/learn/) course, I wanted to apply the concepts I learned to answer a question I frequently got asked: *What is the difference between a Data Scientist and a Data Analyst?*
 
 ## Summary
-I created a supervised learning model on a subset of job postings and used the keywords to predict whether a job description was for a data scientist or data analyst. I then examined the false negatives and false positives and extracted the frequent keywords/phrases to improve the model and learn more about the roles.
+I created a supervised learning model on a subset of job postings and used the keywords to predict whether a job description was for a Data Scientist or Data Analyst. I then examined the false negatives and false positives and extracted the frequent keywords/phrases to improve the model and learn more about the roles.
 
 ## Results
 My Multinomial Naive Bayes model was able to **predict 76%** of job cases correctly, with the default 0.5 threshold and had an **AUC of 88%**, meaning the model did fairly well overall to account for both the true positive rate (sensitivity) and the false positive rate (100-specificity).   
@@ -70,5 +70,5 @@ For a more detailed write up of the results, please see **[my blog post](https:/
 - [ ] Generalize this model for other job pairings
 
 ## Future Questions
-- How does my model stand up against future job postings? What new terms will become common? Will the distinction between data analyst and data scientist become more grey?
+- How does my model stand up against future job postings? What new terms will become common? Will the distinction between Data Analyst and Data Scientist become more grey?
 

@@ -156,25 +156,7 @@ Z = shc.linkage(ivd, 'ward')
 dend = shc.dendrogram(Z, orientation="left", leaf_font_size=15, labels=ivd.index)
 
 
-
-
-# transforme the 'cyl' column in a categorical variable. It will allow to put one color on each level.
-df['cyl']=pd.Categorical(df['cyl'])
-my_color=df['cyl'].cat.codes
- 
-# Apply the right color to each label
-ax = plt.gca()
-xlbls = ax.get_ymajorticklabels()
-num=-1
-for lbl in xlbls:
-num+=1
-val=my_color[num]
-lbl.set_color(my_palette(val))
-
-
-
-
-plt.savefig(os.path.join(image_folder,'Dendogram_updatedCountVect.png'), bbox_inches="tight")
+plt.savefig(os.path.join(image_folder,'Dendogram_updatedCountVect_abrTitle.png'), bbox_inches="tight")
 
 
 
