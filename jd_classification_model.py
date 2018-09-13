@@ -49,6 +49,7 @@ jd_folder = '/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data 
 github_image_folder = '/Users/Leonova/Repos/jd-classifier/images/'
 
 # Import special functions
+os.chdir(github_function_folder)
 import clean_data as cld
 
 
@@ -73,6 +74,9 @@ jds = cld.create_corpus_df(
 j = pd.DataFrame.copy(jds[['is_primary_role', 'description']])
 
 
+# Split the data into two vectors
+X = j.description
+y = j.is_primary_role
 
 # ============================================================
 # ============= Feature Exploration/Engineering  =============
@@ -275,10 +279,6 @@ cross_val_score(pipe, X, y, cv=10, scoring='roc_auc').mean()
 # ------------ Train and Test ---------
 # ----------------------------------------------
 #from sklearn.cross_validation import train_test_split
-
-# Split the data into two vectors
-X = j.description
-y = j.is_primary_role
 
 # (1) First split into train and test (30%)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=2)
