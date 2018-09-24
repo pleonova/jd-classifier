@@ -471,9 +471,19 @@ for term in term_cleanup:
 
 
 
-# ------------   Choose Sorting Order ---------------------
+# ------------   Specify Chart Sorting and Labels ------------ ####
 # Choose which title to sort for
-sort_for_title = both_titles #secondary_title #both_titles #primary_title, secondary_title
+sort_for_title = secondary_title #both_titles #primary_title, secondary_title
+
+## Specific to "Both Titles" sort chart
+#title_string = "Most Frequent Terms\n for {}".format(sort_for_title)
+#subtitle_string = "Note: Sorted by the average appearance frequency rate for the two roles."
+
+## Specific to Single Title sort chart
+title_string = "Most Common Distinct Terms \n for {}".format(sort_for_title)
+subtitle_string = "Note: The terms are sorted by the difference between\n the frequencies rates per each role."
+
+
 
 
 # ------------  Create Tornado Chart ---------------------
@@ -502,6 +512,10 @@ plt.figure(figsize=(10,8))
 
 plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = primary_title)
 plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = secondary_title )
+
+plt.barh(topT_df.index.values, -topT_df['wf_divergence'], color='sandybrown', edgecolor="black", lw=1)
+
+
 plt.yticks(pos, bars, fontsize = 16)
 plt.xlim(-x_axis_max,x_axis_max)
 plt.xticks(fontsize = 16)
@@ -511,15 +525,6 @@ plt.ylabel("Terms", fontsize = 16)
 locs, labels = plt.xticks()
 labels = [abs(item) for item in locs]
 plt.xticks(locs, labels)
-
-## ------------> Specific to "Both Titles" sort chart
-title_string = "Most Frequent Terms\n for {}".format(sort_for_title)
-subtitle_string = "Note: Sorted by the average appearance frequency rate for the two roles."
-
-## ------------> Specific to Single Title sort chart
-#title_string = "Most Frequent & Unique Terms\n for {}".format(sort_for_title)
-#subtitle_string = "Note: The terms are sorted by the difference between\n the weighted frequencies per each role."
-
 
 ttl = plt.title(title_string,fontsize=22, fontweight='bold' )
 ttl.set_position([.5, 1.1])
