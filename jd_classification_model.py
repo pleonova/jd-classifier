@@ -456,7 +456,7 @@ both_titles = "Both Roles"
 
 # ------------   Choose Sorting Order ---------------------
 # Choose which title to sort for
-sort_for_title = both_titles
+sort_for_title = both_titles #primary_title, secondary_title
 
 # ------------  Create Tornado Chart ---------------------
 # Reduce dataframe to top features only
