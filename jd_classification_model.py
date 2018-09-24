@@ -463,7 +463,9 @@ token_df_clean = token_df.copy()
 
 ## Remove terms that aren't insightful 
 term_cleanup = ['s', 'work', 'working',
-                'years', 'experience', 'data', 'team'
+                'years', 'experience', 'data', 'team',
+                'key', 'self', 'using', # Terms to omit for Analyst chart
+                'looking' # Terms to omit for Data Scientist chart
                 ]
 
 for term in term_cleanup:
@@ -473,7 +475,7 @@ for term in term_cleanup:
 
 # ------------   Specify Chart Sorting and Labels ------------ ####
 # Choose which title to sort for
-sort_for_title = secondary_title #both_titles #primary_title, secondary_title
+sort_for_title = secondary_title #primary_title #both_titles #primary_title, secondary_title
 
 ## Specific to "Both Titles" sort chart
 #title_string = "Most Frequent Terms\n for {}".format(sort_for_title)
@@ -481,7 +483,7 @@ sort_for_title = secondary_title #both_titles #primary_title, secondary_title
 
 ## Specific to Single Title sort chart
 title_string = "Most Common Distinct Terms \n for {}".format(sort_for_title)
-subtitle_string = "Note: The terms are sorted by the difference between\n the frequencies rates per each role."
+subtitle_string = "Note: The terms are sorted by\nthe difference between the frequency rates."
 
 
 
@@ -495,11 +497,13 @@ if sort_for_title == both_titles:   ## Sort for popularity for BOTH
     x_axis_max = 1.1
 elif sort_for_title == primary_title: 
     topT_df = token_df_clean.sort_values('wf_divergence', ascending = True).tail(20).reset_index()
+    outline_chart_color_emphasis = 'cornflowerblue'
 else:
     topT_df = token_df_clean.sort_values('wf_divergence', ascending = True).head(20)
     # Re-order results and reset index
     topT_df = topT_df.sort_values('wf_divergence', ascending = False).reset_index()
-    
+    outline_chart_color_emphasis = 'sandybrown'
+
 
 # Set up axis variables
 bars = topT_df['token'].tolist()
@@ -513,8 +517,8 @@ plt.figure(figsize=(10,8))
 plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = primary_title)
 plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = secondary_title )
 
-plt.barh(topT_df.index.values, -topT_df['wf_divergence'], color='sandybrown', edgecolor="black", lw=1)
-
+# Data Scientist or Analyst Diff
+plt.barh(topT_df.index.values, -topT_df['wf_divergence'], color=outline_chart_color_emphasis, edgecolor="black", lw=1) 
 
 plt.yticks(pos, bars, fontsize = 16)
 plt.xlim(-x_axis_max,x_axis_max)
