@@ -454,6 +454,21 @@ x_axis_max = 1.0
 both_titles = "Both Roles"
 
 
+#### ------ Clean up the token list  ---- ###
+## Remove very frequent terms in both jds
+#token_df_clean = token_df[token_df['wf_average'] <= 0.85]
+token_df_clean = token_df.copy()
+
+## Remove terms that aren't insightful 
+term_cleanup = ['s', 'work', 'working',
+                'years', 'experience', 'data', 'team'
+                ]
+
+for term in term_cleanup:
+    token_df_clean = token_df_clean.where(token_df_clean.values != term).dropna()
+
+
+
 # ------------   Choose Sorting Order ---------------------
 # Choose which title to sort for
 sort_for_title = both_titles #primary_title, secondary_title
@@ -461,14 +476,14 @@ sort_for_title = both_titles #primary_title, secondary_title
 # ------------  Create Tornado Chart ---------------------
 # Reduce dataframe to top features only
 if sort_for_title == both_titles:   ## Sort for popularity for BOTH
-    topT_df = token_df.sort_values('wf_average', ascending = False).head(20)
+    topT_df = token_df_clean.sort_values('wf_average', ascending = False).head(20)
     # Re-order results and reset index (top result to appear on the bottom)
     topT_df = topT_df.sort_values('wf_average', ascending = True).reset_index()
     x_axis_max = 1.1
 elif sort_for_title == primary_title: 
-    topT_df = token_df.sort_values('wf_divergence', ascending = True).tail(20).reset_index()
+    topT_df = token_df_clean.sort_values('wf_divergence', ascending = True).tail(20).reset_index()
 else:
-    topT_df = token_df.sort_values('wf_divergence', ascending = True).head(20)
+    topT_df = token_df_clean.sort_values('wf_divergence', ascending = True).head(20)
     # Re-order results and reset index
     topT_df = topT_df.sort_values('wf_divergence', ascending = False).reset_index()
     
