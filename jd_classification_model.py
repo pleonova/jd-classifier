@@ -309,11 +309,48 @@ X_test_dtm = vect.transform(X_test)
 
 nb.fit(X_train_dtm, y_train)
 y_pred_class = nb.predict(X_test_dtm)
+y_pred_prob = nb.predict_proba(X_test_dtm)
 
 
 # Explore the accuracy of this single fold validation
 #from sklearn import metrics
 metrics.accuracy_score(y_test, y_pred_class)
+
+# -------------------------------------
+# ---------- String Class Fit -----------
+# -------------------------------------
+
+# Load in completely new data
+jd_folder2 = '/Users/Leonova/Dropbox/8. meDATAtion/Python - Job Mapping/NLP Data School/JDs Training & Test Docx - 2'
+jds_plus = cld.create_corpus_df(
+        roles_folder = jd_folder2, 
+        titleA = titleA, 
+        identifierA = 'Scientist', 
+        titleB = titleB,
+        titleB_primary = False
+        )
+
+## How the model would classify specific strings?
+# Select the description of just one Job Description
+x_title = ""
+a = jds_plus.loc[jds_plus['title']==x_title, ['description']].values
+
+## Select a string to Explore 
+a = 'machine learning is so fly, reporting is important too'
+a = 'Experience implementing machine learning models using TensorFlow, scikit-learn, or other libraries'
+a = 'Experience analyzing and reporting on product, user, and/or business data at a tech startup'
+a = 'Experience analyzing large, disparate data sets and identifying trends, patterns, and anomalies Ability to translate business questions into concrete data analyses Ability to interpret and present the results of analyses in the context of their original questions Knowledge of statistics and experience building statistical models Experience implementing machine learning models using TensorFlow, scikit-learn, or other libraries Proficiency in R, Python, or other data analysis tools Fluency in SQL'
+a = 'Experience analyzing large, disparate data sets and identifying trends, patterns, and anomalies Ability to translate business questions into concrete data analyses Ability to interpret and present the results of analyses in the context of their original questions Knowledge of statistics and experience building statistical models Experience implementing machine learning models using TensorFlow, scikit-learn, or other libraries Proficiency in R, Python, or other data analysis tools Fluency in SQL Preferred Experience analyzing and reporting on product, user, and/or business data at a tech startup Experience evaluating investment opportunities, for example at a bank, VC firm, or hedge fund'
+a = 'Experience analyzing and reporting on product, user, and/or business data at a tech startup Experience evaluating investment opportunities, for example at a bank, VC firm, or hedge fund'
+a = 'product'
+a = 'We are looking for data scientists who love exploring data and uncovering insights. Our team is creating innovative data-driven solutions that are impacting critical business decisions for Goodwater and our portfolio companies. Do these qualities describe you? Curiosity: You notice patterns and phenomena and ask “why?” You’re hungry to learn the broader context and consequences of your work. Quantitative and qualitative thinking: You seek out the best available data and explore it to answer “why?” Your analyses and insights are guided and vetted by your qualitative understanding of consumer behavior and market trends. Humble and collaborative: You have come to realize that the more knowledge you gain, the less you actually know, and that pushes you to continually seek knowledge from others. You are also eager to share your knowledge and insights with others. Entrepreneurial: You’re comfortable with moving fast and adapting to fluid roadmaps and priorities. You aren’t afraid of failure and look for creative solutions to overcome challenges. If this sounds like you, here are some qualifications we’re looking for:'
+
+# Explore results for additional data
+string = vect.transform([str(a)])
+nb.predict(string)
+nb.predict_proba(string)
+
+
 
 # -------------------------------------
 # ---------- Confusion Matrix -----------
