@@ -530,7 +530,7 @@ plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
 
 
 
-plt.savefig(github_image_folder + 'seaborn.TorandoChart_TermSensitivity_' + sort_for_title.replace(" ", "") + '.png',
+plt.savefig(github_image_folder + 'TorandoChart_TermSensitivity_' + sort_for_title.replace(" ", "") + '.png',
             bbox_inches="tight")
 
 # -------------------------------------
