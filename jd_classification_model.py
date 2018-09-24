@@ -493,27 +493,38 @@ bars = topT_df['token'].tolist()
 pos = arange(len(bars))    # the bar centers on the y axis
 
 plt.figure(figsize=(10,8))
+# Add grid
+plt.grid(zorder=0, alpha =0.5)
 
 plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = primary_title)
 plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = secondary_title )
 plt.yticks(pos, bars, fontsize = 16)
 plt.xlim(-x_axis_max,x_axis_max)
 plt.xticks(fontsize = 16)
-plt.xlabel("Weighted Frequency", fontsize = 16)
+plt.xlabel("Frequency Rate in JD's", fontsize = 16)
 plt.ylabel("Terms", fontsize = 16)
 # Change tick labels to be positive
 locs, labels = plt.xticks()
 labels = [abs(item) for item in locs]
 plt.xticks(locs, labels)
 
-title_string = "Most Frequent & Unique Terms\n for {}".format(sort_for_title)
+## ------------> Specific to "Both Titles" sort chart
+title_string = "Most Frequent Terms\n for {}".format(sort_for_title)
+subtitle_string = "Note: Sorted by the average appearance frequency rate for the two roles."
+
+## ------------> Specific to Single Title sort chart
+#title_string = "Most Frequent & Unique Terms\n for {}".format(sort_for_title)
+#subtitle_string = "Note: The terms are sorted by the difference between\n the weighted frequencies per each role."
+
+
 ttl = plt.title(title_string,fontsize=22, fontweight='bold' )
 ttl.set_position([.5, 1.1])
 
-subtitle_string = "Note: The terms are sorted by the difference between\n the weighted frequencies per each role."
 plt.suptitle(subtitle_string, y=-.01, fontsize=14)
 plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
            ncol=2, mode="expand", borderaxespad=0., fontsize=14)
+
+
 
 plt.savefig(github_image_folder + 'TorandoChart_TermSensitivity_' + sort_for_title.replace(" ", "") + '.png',
             bbox_inches="tight")
