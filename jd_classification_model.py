@@ -446,6 +446,8 @@ token_df = create_token_df(X, y, titleA, titleB)
 # ---------- CHART: Tornado -----------
 # -------------------------------------
 #from pylab import *
+import matplotlib.style
+plt.style.use('seaborn')
 
 # Set up parameters
 primary_title = titleA
@@ -471,7 +473,8 @@ for term in term_cleanup:
 
 # ------------   Choose Sorting Order ---------------------
 # Choose which title to sort for
-sort_for_title = both_titles #primary_title, secondary_title
+sort_for_title = both_titles #secondary_title #both_titles #primary_title, secondary_title
+
 
 # ------------  Create Tornado Chart ---------------------
 # Reduce dataframe to top features only
@@ -492,9 +495,10 @@ else:
 bars = topT_df['token'].tolist()
 pos = arange(len(bars))    # the bar centers on the y axis
 
+
 plt.figure(figsize=(10,8))
 # Add grid
-plt.grid(zorder=0, alpha =0.5)
+#plt.grid(zorder=0, alpha =0.5)
 
 plt.barh(topT_df.index.values, -topT_df['primary_wf'], color='cornflowerblue' , label = primary_title)
 plt.barh(topT_df.index.values, topT_df['secondary_wf'], color='sandybrown', label = secondary_title )
@@ -526,7 +530,7 @@ plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
 
 
 
-plt.savefig(github_image_folder + 'TorandoChart_TermSensitivity_' + sort_for_title.replace(" ", "") + '.png',
+plt.savefig(github_image_folder + 'seaborn.TorandoChart_TermSensitivity_' + sort_for_title.replace(" ", "") + '.png',
             bbox_inches="tight")
 
 # -------------------------------------
